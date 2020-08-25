@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        background-color: #004f66ff;
+      }
+      .video-wrapper {
+        width: 100%;
+        height: 100%;
+      }
+      .video-wrapper video {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        var $video = $("video"),
+          $window = $(window);
+
+        $(window)
+          .resize(function () {
+            var height = $window.height();
+            $video.css("height", height);
+
+            var videoWidth = $video.width(),
+              windowWidth = $window.width(),
+              marginLeftAdjust = (windowWidth - videoWidth) / 2;
+
+            $video.css({
+              height: height,
+              width: windowWidth,
+              //marginLeft: marginLeftAdjust,
+            });
+          })
+          .resize();
+
+        GetURLParameter = function (sParam) {
+          var url = window.location.search.substring(1);
+          if (url.startsWith(sParam) === true) {
+            return url.substring(sParam.length + 1);
+          }
+        };
+        var videoFile = GetURLParameter("video");
+        console.log(videoFile);
+        if (videoFile != undefined) {
+          var video = $("video")[0];
+          video.src = videoFile;
+          video.load();
+        }
+      });
+    </script>
+    <title>Tutorial</title>
+  </head>
+  <body>
+    <video controls>
+      <source
+        src="https://firebasestorage.googleapis.com/v0/b/phylab-65237.appspot.com/o/MagneticLinesofForce.mp4?alt=media&token=89c3ed88-21df-4a76-afc3-c214c517032d"
+        type="video/mp4"
+      />
+    </video>
+  </body>
+</html>

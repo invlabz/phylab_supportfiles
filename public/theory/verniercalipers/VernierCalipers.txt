@@ -1,0 +1,152 @@
+{
+  "content": [
+    {
+      "text": "Aim:",
+      "style": "title"
+    },
+	{
+      "text": "To determine the volumes of given cylinder and sphere by measuring length and diameter with vernier calipers."
+    },
+    {
+      "text": "Apparatus:",
+      "style": "title"
+    },
+	{
+      "text": "Vernier calipers, cylinder and sphere."
+    },
+    {
+      "text": "What is Vernier Calipers?",
+      "style": "title"
+    },
+	{
+      "text": "A calliper is a device used to measure the distance between two opposing sides of an object. It can be as simple as a compass with inward or outward-facing points. First the tips of the calliper are adjusted to fit across the points to be measured and the calliper is then removed and the distance between the tips is measured using a ruler. "
+    },
+	{
+      "text": "The modern Vernier calliper was invented by Joseph R. Brown in 1851. It was the first practical tool for exact measurements that could be sold at an affordable price to ordinary machinists.   The Vernier Calliper consists of a main scale fitted with a jaw at one end. Another jaw, containing the vernier scale, moves over the main scale. When the two jaws are in contact, the zero of the main scale and the zero of the Vernier scale should coincide. If both the zeros do not coincide, there will be a positive or negative zero error."
+    },
+    {
+      "text": "Parts of a Vernier Caliper:",
+      "style": "title"
+    },
+	{
+	  "image": "VernierCalliper"
+	},
+	{
+      "text": "1. Main Scale:",
+      "style": "subtitle"
+    },
+	{
+      "text": "The main scale consists of a steel metallic strip graduated in centimeters at one edge and in inches at the other edge . It carries the inner and outer measuring jaws. When the two jaws are in contact, the zero of the main scale and the zero of the Vernier scale should coincide. If both the zeros do not coincide, there will be a positive or negative zero error."
+    },
+	{
+      "text": "2. Vernier Scale",
+      "style": "subtitle"
+    },
+	{
+      "text": "A vernier scale  slides on the strip. It can be fixed in any position by the retainer. On the Vernier scale, 0.9 cm is divided into ten equal parts."
+    },
+	{
+      "text": "3. Outer Measuring Jaws",
+      "style": "subtitle"
+    },
+	{
+      "text": "The outer measuring jaws helps to take the outer dimension of an object"
+    },
+	{
+      "text": "4. Inner Measuring Jaws",
+      "style": "subtitle"
+    },
+	{
+      "text": "The inner measuring jaws helps to take the inner dimension of an object."
+    },
+	{
+      "text": "5. Retainer",
+      "style": "subtitle"
+    },
+	{
+      "text": "The retainer helps to retain the object within the jaws of the Vernier calipers."
+    },
+	{
+      "text": "6. Depth Measuring Prong",
+      "style": "subtitle"
+    },
+	{
+      "text": "The depth measuring prong helps to measure the depth of an object."
+    },
+	{
+      "text": "Zero Error:",
+      "style": "title"
+    },
+	{
+	  "image": "zeroerror"
+	},
+	{
+      "text": "Zero error is defined as the condition where a measuring instrument registers a reading when there should not be any reading. In case of vernier calipers it occurs when a zero on main scale does not coincide with a zero on vernier scale. The zero error may be of two types: when the scale is towards numbers greater than zero it is positive; else negative. The method to use a vernier scale or caliper with zero error is to use the formula: actual reading = main scale + vernier scale − (zero error)."
+    },
+	{
+      "text": "Zero error may arise due to knocks that cause the calibration to be thrown off at the 0.00 mm when the jaws are perfectly closed or just touching each other. Perfection is not necessarily equal (to scalar) to zero error. \"Knocks\" seem an excellent example of mathematical imperfection. Alignment of linear and rotational mathematics is a difficult but interesting task as previously described by Pierre Vernier and much elaborated in later ages."
+    },
+	{
+      "text": "Positive zero error refers to the case when the jaws of the vernier caliper are just closed and the reading is a positive reading away from the actual reading of 0.00 mm. If the reading is 0.10 mm, the zero error is referred to as +0.10 mm."
+    },
+	{
+      "text": "Negative zero error refers to the case when the jaws of the vernier caliper are just closed and the reading is a negative reading away from the actual reading of 0.00 mm. If the reading is 0.08 mm, the zero error is referred to as -0.08 mm."
+    },
+	{
+      "text": "Zero error (ZE) = ±n × least count (LC)"
+    },
+	{
+      "text": "Least Count:",
+      "style": "title"
+    },
+	{
+      "text": "The least count or the smallest reading which you can get with the instrument can be calculated as;"
+    },
+	{
+	  "image": "formula:4"
+	},
+	{
+      "text": "OR"
+    },
+	{
+	  "image": "formula:3"
+	},
+	{
+      "text": "First calculate the least count and only then place the object between the two jaws."
+    },
+	{
+      "text": "Record the position of zero of the Vernier scale on the main scale."
+    },
+	{
+      "text": "Procedure:",
+      "style": "title"
+    },
+	{
+      "text": "Before to take the readinds, the least count of the vernier calipers is determinded. The given cylinder is grpped gently between the jaws A and B. The reading on the main scale just before the zero of the vernier is noted. This is called Main Scale Reading (M.S.R.). The number of divisions (n) on the vernier which coincides with anyone of the divisions on the main scale is noted. This is called Vernier Coincidence (V.C.). The VC is multiplied by the lease count to get the fraction of a main scale division. This is added to the M.S.R. to get the correct or total reading or length of the cylinder."
+    },
+	{
+	  "image": "formula:2"
+	},
+	{
+      "text": "Keeping the cylinder lengthwise between the jaws in different positions, 4 reading are taken to get the mean length l of the cylinder."
+    },
+	{
+      "text": "The cylinder is then placed diametrically between the jaws and mean diameter 'd' is measured as above."
+    },
+	{
+      "text": "If 'r' is its mean radius, volume of the cylinder 'V' is calculated with the formula."
+    },
+	{
+	  "image": "formula:1"
+	},
+	{
+      "text": "The sphere is gripper between the jaws in such a way the line joining the points where they touch the sphere passes through its centre and mean diameter 'd' is measured."
+    },
+	{
+      "text": "If 'r' is its mean radius, volume of the sphere 'V' is calculated with the formula."
+    },
+	{
+	  "image": "formula:0"
+	}
+  ]
+}
