@@ -41,10 +41,15 @@
             var videoWidth = $video.width(),
               windowWidth = $window.width(),
               marginLeftAdjust = (windowWidth - videoWidth) / 2;
+			
+			var padding = 15;
+			
 
             $video.css({
-              height: height,
-              width: windowWidth,
+              height: height - (2*padding),
+              width: windowWidth - (2*padding),
+			  'padding-left': '15px',
+			  'padding-right': '15px',
               //marginLeft: marginLeftAdjust,
             });
           })

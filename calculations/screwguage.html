@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"
+    ></script>
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [
+            ["$", "$"],
+            ["\\(", "\\)"],
+          ],
+        },
+        svg: { fontCache: "global" },
+      };
+    </script>
+    <style>
+      body {
+        background-color: #004f66ff;
+        margin: 2em;
+        color: whitesmoke;
+      }
+      img {
+        margin: 1em;
+        object-fit: contain;
+      }
+      .table > tbody > tr > td {
+        vertical-align: middle;
+      }
+      .table-bordered thead th {
+        vertical-align: middle !important;
+        text-align: center !important;
+      }
+      .table-bordered tbody td {
+        vertical-align: middle !important;
+        text-align: center !important;
+      }
+      /* Chrome, Safari, Edge, Opera */
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox */
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
+
+      .btn-sample {
+        color: #004f66;
+        background-color: #11cafe;
+        border-color: #11cafe;
+      }
+      .text-primary1 {
+        color: #11cafe !important;
+      }
+      .btn-sample:hover,
+      .btn-sample:focus,
+      .btn-sample:active,
+      .btn-sample.active,
+      .open .dropdown-toggle.btn-sample {
+        color: #004f66;
+        background-color: #10a7d1;
+        border-color: #11cafe;
+      }
+
+      .btn-sample:active,
+      .btn-sample.active,
+      .open .dropdown-toggle.btn-sample {
+        background-image: none;
+      }
+
+      .btn-sample.disabled,
+      .btn-sample[disabled],
+      fieldset[disabled] .btn-sample,
+      .btn-sample.disabled:hover,
+      .btn-sample[disabled]:hover,
+      fieldset[disabled] .btn-sample:hover,
+      .btn-sample.disabled:focus,
+      .btn-sample[disabled]:focus,
+      fieldset[disabled] .btn-sample:focus,
+      .btn-sample.disabled:active,
+      .btn-sample[disabled]:active,
+      fieldset[disabled] .btn-sample:active,
+      .btn-sample.disabled.active,
+      .btn-sample[disabled].active,
+      fieldset[disabled] .btn-sample.active {
+        background-color: #11cafe;
+        border-color: #11cafe;
+      }
+
+      .btn-sample .badge {
+        color: #11cafe;
+        background-color: #004f66;
+      }
+      .table {
+        color: whitesmoke;
+      }
+    </style>
+
+    <script>
+      var uid = undefined;
+      var data = undefined;
+      var ans = undefined;
+      var experiment = undefined;
+      var currentDoc = undefined;
+      $(document).ready(() => {
+        $("#mysubmit").show();
+        $("#myspinner").hide();
+        $.urlParam = function (name) {
+          var results = new RegExp("[\?&]" + name + "=([^^&#]*)").exec(
+            window.location.href
+          );
+          if (results == null) {
+            return undefined;
+          } else {
+            return results[1] || 0;
+          }
+        };
+        uid = $.urlParam("uid");
+        data = JSON.parse(decodeURI($.urlParam("data")));
+        ans = $.urlParam("ans");
+        experiment = $.urlParam("experiment");
+        currentDoc = $.urlParam("currentDoc");
+
+        $("#ze").text(data.ze);
+        $("#zec").text(data.zec);
+        $("#ps").text(data.ps);
+        $("#nhs").text(data.nhs);
+        $("#psr1").text(data.observationDatas[0].psr);
+        $("#o1").text(data.observationDatas[0].observed);
+        $("#psr2").text(data.observationDatas[1].psr);
+        $("#o2").text(data.observationDatas[1].observed);
+        $("#psr3").text(data.observationDatas[2].psr);
+        $("#o3").text(data.observationDatas[2].observed);
+        $("#psr4").text(data.observationDatas[3].psr);
+        $("#o4").text(data.observationDatas[3].observed);
+      });
+
+      function processData() {
+        data.lc = parseFloat($("#lc").val());
+        data.observationDatas[0].corrected = parseFloat($("#c1").val());
+        data.observationDatas[0].fraction = parseFloat($("#f1").val());
+        data.observationDatas[0].totalReading = parseFloat($("#t1").val());
+        data.observationDatas[1].corrected = parseFloat($("#c2").val());
+        data.observationDatas[1].fraction = parseFloat($("#f2").val());
+        data.observationDatas[1].totalReading = parseFloat($("#t2").val());
+        data.observationDatas[2].corrected = parseFloat($("#c3").val());
+        data.observationDatas[2].fraction = parseFloat($("#f3").val());
+        data.observationDatas[2].totalReading = parseFloat($("#t3").val());
+        data.observationDatas[3].corrected = parseFloat($("#c4").val());
+        data.observationDatas[3].fraction = parseFloat($("#f4").val());
+        data.observationDatas[3].totalReading = parseFloat($("#t4").val());
+        data.thickness = parseFloat($("#meant").val());
+
+        console.log(data);
+        if (Math.abs(data.thickness - ans) < 0.05) {
+          $("#mysubmit").hide();
+          $("#myspinner").show();
+          $.ajax({
+            url:
+              "http://localhost:5001/phylab-65237/us-central1/pushExperimentData",
+            type: "POST",
+            data: {
+              userId: uid,
+              experiment: experiment,
+              currentDoc: currentDoc,
+              data: data,
+            },
+            dataType: "json",
+            success: function (data) {
+              $("#mysubmit").show();
+              $("#myspinner").hide();
+              console.log(data);
+            },
+            error: function (error) {
+              $("#mysubmit").show();
+              $("#myspinner").hide();
+              console.log(`Error ${error}`);
+            },
+          });
+        } else {
+        }
+      }
+    </script>
+    <title>Theory</title>
+  </head>
+  <body>
+    <div class="container">
+      <form onsubmit="event.preventDefault(); processData();">
+        <div class="row">
+          <div class="col-12">
+            <h5>Observations:</h5>
+            <table class="screwguage table table-borderless">
+              <tbody>
+                <tr>
+                  <td>Zero error =</td>
+                  <td id="ze"></td>
+                </tr>
+                <tr>
+                  <td>Zero error correction =</td>
+                  <td id="zec"></td>
+                </tr>
+                <tr>
+                  <td>Pitch of the screw =</td>
+                  <td id="ps"></td>
+                  <td>mm</td>
+                </tr>
+                <tr>
+                  <td>No. of divisions on the head scale =</td>
+                  <td id="nhs"></td>
+                </tr>
+                <tr>
+                  <td>
+                    Least Count L.C. = \( \frac{Pitch of the screw}{No. of head
+                    scake divisions} \) =
+                  </td>
+                  <td>
+                    <input
+                      id="lc"
+                      name="leastCount"
+                      type="number"
+                      class="form-control"
+                      placeholder=""
+                      required
+                      step="any"
+                    />
+                  </td>
+                  <td>mm</td>
+                </tr>
+              </tbody>
+            </table>
+            <h5>Thickness of the glass plate:</h5>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th rowspan="2">S.No.</th>
+                  <th rowspan="2">P.S.R a mm</th>
+                  <th colspan="2">Head scale coincidence</th>
+                  <th rowspan="2">Fraction b = n x LC mm</th>
+                  <th rowspan="2">Total Reading t = (a + b)) mm</th>
+                </tr>
+                <tr>
+                  <th>Observed mm</th>
+                  <th>Corrected n mm</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td id="psr1"></td>
+                  <td id="o1"></td>
+                  <td>
+                    <input
+                      id="c1"
+                      type="number"
+                      class="form-control"
+                      placeholder=""
+                      required
+                      step="any"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      id="f1"
+                      type="number"
+                      class="form-control"
+                      placeholder=""
+                      required
+                      step="any"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      id="t1"
+                      type="number"
+                      class="form-control"
+                      placeholder=""
+                      required
+                      step="any"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td id="psr2"></td>
+                  <td id="o2"></td>
+                  <td>
+                    <input
+                      id="c2"
+                      type="number"
+                      class="form-control"
+                      placeholder=""
+                      required
+                      step="any"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      id="f2"
+                      type="number"
+                      class="form-control"
+                      placeholder=""
+                      required
+                      step="any"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      id="t2"
+                      type="number"
+                      class="form-control"
+                      placeholder=""
+                      required
+                      step="any"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td id="psr3"></td>
+                  <td id="o3"></td>
+                  <td>
+                    <input
+                      id="c3"
+                      type="number"
+                      class="form-control"
+                      placeholder=""
+                      required
+                      step="any"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      id="f3"
+                      type="number"
+                      class="form-control"
+                      placeholder=""
+                      required
+                      step="any"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      id="t3"
+                      type="number"
+                      class="form-control"
+                      placeholder=""
+                      required
+                      step="any"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td id="psr4"></td>
+                  <td id="o4"></td>
+                  <td>
+                    <input
+                      id="c4"
+                      type="number"
+                      class="form-control"
+                      placeholder=""
+                      required
+                      step="any"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      id="f4"
+                      type="number"
+                      class="form-control"
+                      placeholder=""
+                      required
+                      step="any"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      id="t4"
+                      type="number"
+                      class="form-control"
+                      placeholder=""
+                      required
+                      step="any"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table table-borderless">
+              <tbody>
+                <tr>
+                  <td>Mean thickness of the glass plate, t =</td>
+                  <td>
+                    <input
+                      id="meant"
+                      type=""
+                      class="form-control"
+                      placeholder=""
+                      step="any"
+                      required
+                    />
+                  </td>
+                  <td>mm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center">
+            <button id="mysubmit" class="btn btn-sample" type="submit">
+              Submit
+            </button>
+            <div
+              id="myspinner"
+              class="spinner-border text-primary1"
+              role="status"
+            >
+              <span class="sr-only">Loading...</span>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
