@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ul,
@@ -32,8 +32,8 @@ textarea,
 select {
   outline: none;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   font: normal 16px/1.4 "Montserrat", sans-serif;
 }
 
@@ -49,22 +49,22 @@ select {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .col-md-6 {
   width: 50%;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
   max-width: 50%;
 }
 
 .col-md-4 {
   width: 33.33%;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 33.33%;
-          flex: 0 0 33.33%;
+  -ms-flex: 0 0 33.33%;
+  flex: 0 0 33.33%;
   max-width: 33.33%;
 }
 
@@ -97,7 +97,8 @@ select {
   transition: 0.2s ease;
 }
 
-.action:before, .action:after {
+.action:before,
+.action:after {
   content: none;
   display: none;
 }
@@ -120,13 +121,13 @@ select {
   padding: 12px 0;
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 5px -2px rgba(38, 38, 38, 0.5);
-          box-shadow: 0 0 5px -2px rgba(38, 38, 38, 0.5);
+  box-shadow: 0 0 5px -2px rgba(38, 38, 38, 0.5);
 }
 
 .site-header .row {
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .logo {
@@ -141,8 +142,8 @@ select {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .logo img {
@@ -155,10 +156,10 @@ select {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .navigation > ul > li a {
@@ -211,11 +212,11 @@ select {
   display: flex;
   min-height: 750px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background: url("../images/hero-bg.jpg") no-repeat center center/cover;
 }
 
@@ -280,8 +281,8 @@ select {
 
 .feature-section .row {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .feature-item {
@@ -298,11 +299,11 @@ select {
   margin: 0 auto;
   border-radius: 20px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-color: rgba(46, 213, 255, 0.1);
 }
 
@@ -330,8 +331,11 @@ svg .svg-elem-1 {
   stroke-dashoffset: 149.88546752929688px;
   stroke-dasharray: 149.88546752929688px;
   fill: transparent;
-  -webkit-transition: stroke-dashoffset 2.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s, fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
-  transition: stroke-dashoffset 2.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s, fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+  -webkit-transition: stroke-dashoffset 2.5s cubic-bezier(0.47, 0, 0.745, 0.715)
+      0s,
+    fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+  transition: stroke-dashoffset 2.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s,
+    fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
 }
 
 svg.active .svg-elem-1 {
@@ -342,8 +346,11 @@ svg .svg-elem-2 {
   stroke-dashoffset: 180.0462646484375px;
   stroke-dasharray: 180.0462646484375px;
   fill: transparent;
-  -webkit-transition: stroke-dashoffset 2.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s, fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
-  transition: stroke-dashoffset 2.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s, fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+  -webkit-transition: stroke-dashoffset 2.5s cubic-bezier(0.47, 0, 0.745, 0.715)
+      0s,
+    fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+  transition: stroke-dashoffset 2.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s,
+    fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
 }
 
 svg.active .svg-elem-2 {
@@ -354,8 +361,11 @@ svg .svg-elem-3 {
   stroke-dashoffset: 164.20082092285156px;
   stroke-dasharray: 164.20082092285156px;
   fill: transparent;
-  -webkit-transition: stroke-dashoffset 2.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s, fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
-  transition: stroke-dashoffset 2.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s, fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+  -webkit-transition: stroke-dashoffset 2.5s cubic-bezier(0.47, 0, 0.745, 0.715)
+      0s,
+    fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+  transition: stroke-dashoffset 2.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s,
+    fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
 }
 
 svg.active .svg-elem-3 {
@@ -366,8 +376,11 @@ svg .svg-elem-4 {
   stroke-dashoffset: 155.41876220703125px;
   stroke-dasharray: 155.41876220703125px;
   fill: transparent;
-  -webkit-transition: stroke-dashoffset 2.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s, fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
-  transition: stroke-dashoffset 2.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s, fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+  -webkit-transition: stroke-dashoffset 2.5s cubic-bezier(0.47, 0, 0.745, 0.715)
+      0s,
+    fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+  transition: stroke-dashoffset 2.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s,
+    fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
 }
 
 svg.active .svg-elem-4 {
@@ -378,8 +391,11 @@ svg .svg-elem-5 {
   stroke-dashoffset: 146.36825561523438px;
   stroke-dasharray: 146.36825561523438px;
   fill: transparent;
-  -webkit-transition: stroke-dashoffset 2.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s, fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
-  transition: stroke-dashoffset 2.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s, fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+  -webkit-transition: stroke-dashoffset 2.5s cubic-bezier(0.47, 0, 0.745, 0.715)
+      0s,
+    fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+  transition: stroke-dashoffset 2.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s,
+    fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
 }
 
 svg.active .svg-elem-5 {
@@ -460,7 +476,7 @@ svg.active .svg-elem-5 {
   text-align: center;
   border-radius: 10px;
   -webkit-box-shadow: 0 0 5px -2px rgba(38, 38, 38, 0.5);
-          box-shadow: 0 0 5px -2px rgba(38, 38, 38, 0.5);
+  box-shadow: 0 0 5px -2px rgba(38, 38, 38, 0.5);
   -webkit-transition: 0.25s ease;
   transition: 0.25s ease;
 }
@@ -496,8 +512,8 @@ svg.active .svg-elem-5 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
   overflow: hidden;
   max-height: 700px;
@@ -505,19 +521,18 @@ svg.active .svg-elem-5 {
   margin-bottom: -100px;
   /*background-color: #010101;*/
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .video-wrapper video {
   width: 100%;
   max-height: 100%;
   -webkit-transform: scale(0.7);
-          transform: scale(0.7);
-
+  transform: scale(0.7);
 }
 
 .contact-section {
@@ -558,7 +573,12 @@ svg.active .svg-elem-5 {
   opacity: 0;
 }
 
-.contact-section .contact-form .form-group-checkbox label [type="checkbox"]:checked ~ span:after {
+.contact-section
+  .contact-form
+  .form-group-checkbox
+  label
+  [type="checkbox"]:checked
+  ~ span:after {
   opacity: 1;
 }
 
@@ -589,7 +609,7 @@ svg.active .svg-elem-5 {
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
   border-left: 2px solid rgba(38, 38, 38, 0.2);
   border-bottom: 2px solid rgba(38, 38, 38, 0.2);
 }
@@ -610,11 +630,11 @@ svg.active .svg-elem-5 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-bottom: 10px;
 }
 
@@ -676,7 +696,7 @@ svg.active .svg-elem-5 {
   top: 42%;
   margin: auto;
   -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
+  transform: rotate(135deg);
   border-left: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
 }
@@ -697,12 +717,12 @@ svg.active .svg-elem-5 {
   from {
     opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
   }
   to {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
@@ -710,64 +730,64 @@ svg.active .svg-elem-5 {
   from {
     opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
   }
   to {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
 @-webkit-keyframes slideInUp {
   0% {
     -webkit-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
     visibility: visible;
   }
   to {
     -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+    transform: translateZ(0);
   }
 }
 
 @keyframes slideInUp {
   0% {
     -webkit-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
     visibility: visible;
   }
   to {
     -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+    transform: translateZ(0);
   }
 }
 
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
-          animation-name: fadeInUp;
+  animation-name: fadeInUp;
 }
 
 .slideInUp {
   -webkit-animation-name: slideInUp;
-          animation-name: slideInUp;
+  animation-name: slideInUp;
 }
 
 .animated {
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 @media (print), (prefers-reduced-motion: reduce) {
   .animated {
     -webkit-animation-duration: 1ms !important;
-            animation-duration: 1ms !important;
+    animation-duration: 1ms !important;
     -webkit-transition-duration: 1ms !important;
-            transition-duration: 1ms !important;
+    transition-duration: 1ms !important;
     -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
   }
 }
 
@@ -817,8 +837,8 @@ svg.active .svg-elem-5 {
   .why-us-section .inner-item {
     width: 100%;
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
     max-width: 100%;
   }
   .why-us-section .inner-item__left {
@@ -850,7 +870,7 @@ svg.active .svg-elem-5 {
   }
   .video-wrapper video {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   .contact-section {
     padding-bottom: 60px;
@@ -877,7 +897,7 @@ svg.active .svg-elem-5 {
     height: 20px;
     color: pointer;
     -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
   }
   .nav-toggle span {
     position: relative;
@@ -887,7 +907,8 @@ svg.active .svg-elem-5 {
     margin-top: 10px;
     background-color: #262626;
   }
-  .nav-toggle span:before, .nav-toggle span:after {
+  .nav-toggle span:before,
+  .nav-toggle span:after {
     position: absolute;
     content: "";
     height: 2px;
@@ -902,19 +923,21 @@ svg.active .svg-elem-5 {
   .nav-toggle.active span {
     background-color: transparent;
   }
-  .nav-toggle.active span:before, .nav-toggle.active span:after {
+  .nav-toggle.active span:before,
+  .nav-toggle.active span:after {
     top: 0;
     left: 0;
     -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
     -webkit-transition: -webkit-transform 0.5s cubic-bezier(1, 0, 0, 1);
     transition: -webkit-transform 0.5s cubic-bezier(1, 0, 0, 1);
     transition: transform 0.5s cubic-bezier(1, 0, 0, 1);
-    transition: transform 0.5s cubic-bezier(1, 0, 0, 1), -webkit-transform 0.5s cubic-bezier(1, 0, 0, 1);
+    transition: transform 0.5s cubic-bezier(1, 0, 0, 1),
+      -webkit-transform 0.5s cubic-bezier(1, 0, 0, 1);
   }
   .nav-toggle.active span:before {
     -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    transform: rotate(45deg);
   }
   .navigation {
     position: absolute;
@@ -925,16 +948,16 @@ svg.active .svg-elem-5 {
     padding: 10px 0 20px 0;
     background-color: #ffffff;
     -webkit-box-shadow: 0 5px 5px -7px rgba(38, 38, 38, 0.5);
-            box-shadow: 0 5px 5px -7px rgba(38, 38, 38, 0.5);
+    box-shadow: 0 5px 5px -7px rgba(38, 38, 38, 0.5);
   }
   .navigation > ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
   }
   .navigation > ul > li {
     padding: 0 20px;
@@ -982,8 +1005,8 @@ svg.active .svg-elem-5 {
   .feature-item {
     width: 50%;
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
     max-width: 50%;
   }
   .feature-item__icon {
@@ -1018,8 +1041,8 @@ svg.active .svg-elem-5 {
   .col-sm-12 {
     width: 100%;
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
     max-width: 100%;
   }
   .video-wrapper {
@@ -1041,5 +1064,12 @@ svg.active .svg-elem-5 {
   .copyright {
     font-size: 14px;
   }
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=style.css.map */
