@@ -30,7 +30,7 @@
     </style>
     <script>
       $(document).ready(function () {
-        var $video = $("video"),
+        var $video = $("iframe"),
           $window = $(window);
 
         $(window)
@@ -41,15 +41,14 @@
             var videoWidth = $video.width(),
               windowWidth = $window.width(),
               marginLeftAdjust = (windowWidth - videoWidth) / 2;
-			
-			var padding = 15;
-			
+
+            var padding = 15;
 
             $video.css({
-              height: height - (2*padding),
-              width: windowWidth - (2*padding),
-			  'padding-left': '15px',
-			  'padding-right': '15px',
+              height: height - 2 * padding,
+              width: windowWidth - 2 * padding,
+              "padding-left": "15px",
+              "padding-right": "15px",
               //marginLeft: marginLeftAdjust,
             });
           })
@@ -57,6 +56,7 @@
 
         GetURLParameter = function (sParam) {
           var url = window.location.search.substring(1);
+          console.log(url);
           if (url.startsWith(sParam) === true) {
             return url.substring(sParam.length + 1);
           }
@@ -64,8 +64,8 @@
         var videoFile = GetURLParameter("video");
         console.log(videoFile);
         if (videoFile != undefined) {
-          var video = $("video")[0];
-          video.src = videoFile;
+          var video = $("iframe")[0];
+          video.src = "https://www.youtube.com/embed/" + videoFile;
           video.load();
         }
       });
@@ -73,11 +73,17 @@
     <title>Tutorial</title>
   </head>
   <body>
-    <video controls>
+    <!-- <video controls>
       <source
-        src="https://firebasestorage.googleapis.com/v0/b/phylab-65237.appspot.com/o/MagneticLinesofForce.mp4?alt=media&token=89c3ed88-21df-4a76-afc3-c214c517032d"
+        src="https://archive.org/embed/Popeye_forPresident"
         type="video/mp4"
       />
-    </video>
+    </video> -->
+    <iframe
+      src="https://www.youtube.com/embed/mD4vMIvnnro"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
   </body>
 </html>
