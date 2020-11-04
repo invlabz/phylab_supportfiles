@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"
+    ></script>
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [
+            ["$", "$"],
+            ["\\(", "\\)"],
+          ],
+        },
+        svg: { fontCache: "global" },
+      };
+    </script>
+    <style>
+      body {
+        background-color: #004f66ff;
+        margin: 2em;
+        color: whitesmoke;
+      }
+      img {
+        margin: 1em;
+        object-fit: contain;
+      }
+    </style>
+
+    <title>Theory</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="col-12">
+        <h4>Aim:</h4>
+        <p>1. To plot the input and output static characteristic.</p>
+        <p>
+          2. To calculate the input dynamic resistance from the input
+          characteristics and out dynamic resistance and current gain from the
+          output characteristics of the given transistor.
+        </p>
+        <h4>Apparatus:</h4>
+        <p>
+          An n-p-n transistor BC 107, Resistors 39 kilo ohm and 1 kilo ohm, Two
+          high resistance rheostats, one 0-3V voltmeter, one 0-30 voltmeter, one
+          0 - 50 micro Ammeter, one 0 - 50 milli Ammeter, two one way keys and
+          connecting wires.
+        </p>
+        <h4>Theory:</h4>
+        <p>
+          In common emitter configuration the emitter is common to both input
+          and output. For noremal operation the Base-Emitter junction is forward
+          biased and base-collector junction is reverse biase. The input
+          characteristics are plotted between I<sub>B</sub> and V<sub>BE</sub>
+          keeping the voltage V<sub>CE</sub> constant. This characteristics is
+          very similar to that of a forward biased diode. The input dynamic
+          resistance is calculated using the formula.
+        </p>
+        <p>
+          \( r_i = \frac {\bigtriangleup V_{BE}}{\bigtriangleup I_{B}} \, at \,
+          constant \, V_{CE}\)
+        </p>
+        <p>
+          The output characteristics are plotted between I<sub>C</sub> and
+          VC<sub>CE</sub> keeping I<sub>B</sub> constant. These cureves are
+          almost horizontal. The output dynamic resistance is given by,
+        </p>
+        <p>
+          \( r_0 = \frac {\bigtriangleup V_{CE}}{\bigtriangleup I_{C}} \, at \,
+          constant \, I_{B}\)
+        </p>
+        <p>
+          At a given operating point, we define DC and AC current gains (beta)
+          as follows:
+        </p>
+        <p>
+          \( DC\, current\, gain\, \beta_{dc} = \frac { I_{C}}{ I_{B}} \, at \,
+          constant \, V_{CE}\)
+        </p>
+        <p>
+          \( AC\, current\, gain\, \beta_{ac} = \frac {\bigtriangleup
+          I_{C}}{\bigtriangleup V_{CE}} \, at \, constant \, V_{CE}\)
+        </p>
+        <h4>Circuit Diagram:</h4>
+        <img class="img-fluid" src="1.png" />
+        <h4>Procedure:</h4>
+        <h5>a. Input characteristics:</h5>
+        <ol>
+          <li>Connect the Circuit as shown in figure.</li>
+          <li>
+            Keep the voltage V<sub>CE</sub> as constant at 2 V by varying V<sub
+              >CE</sub
+            >
+          </li>
+          <li>
+            Very the input voltage, V<sub>BB</sub> in steps of 1 V up to 10 V
+          </li>
+          <li>
+            Measure the voltage, V<sub>BE</sub> from voltmeter and current,
+            I<sub>B</sub> through the ammeter for different values of input
+            voltages.
+          </li>
+          <li>V<sub>CE</sub> values of 5 V and 10 V</li>
+          <li>Draw input static characteristics of tabulated values.</li>
+          <li>
+            At suitable operating point, calculated input dynamic resistance.
+          </li>
+        </ol>
+        <h5>b. Output characteristics:</h5>
+        <ol>
+          <li>
+            Fix input base current I<sub>B</sub> at constant value say at 10
+            microA
+          </li>
+          <li>
+            Vary the output voltage, V<sub>CC</sub> in steps of 1V from 0V up to
+            10V.
+          </li>
+          <li>
+            Measure the voltage, V<sub>CC</sub> from voltmeter and current I<sub
+              >C</sub
+            >
+            through the ammeter for different values.
+          </li>
+          <li>
+            Repeat above step 2 and 3 for various values of I<sub>B</sub> = 20
+            and 30 micro A
+          </li>
+          <li>Draw output static characteristics for tabulated values.</li>
+        </ol>
+        <h4>Graphs:</h4>
+        <img class="img-fluid" src="2.jpg" />
+        <img class="img-fluid" src="3.jpg" />
+        <h4>Precaustions:</h4>
+        <ul>
+          <li>All connection should be neat, clean and tight.</li>
+          <li>
+            Key should be use in circuit and opened when the circuit is not
+            being used.
+          </li>
+          <li>Forward bias voltage beyond breakdown should be applied.</li>
+          <li>Reverse bias beyond breakdown should not be applied.</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

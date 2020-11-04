@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"
+    ></script>
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [
+            ["$", "$"],
+            ["\\(", "\\)"],
+          ],
+        },
+        svg: { fontCache: "global" },
+      };
+    </script>
+    <style>
+      body {
+        background-color: #004f66ff;
+        margin: 2em;
+        color: whitesmoke;
+      }
+      img {
+        margin: 1em;
+        object-fit: contain;
+      }
+    </style>
+
+    <title>Theory</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="col-12">
+        <h4>Aim:</h4>
+        <p>To draw I, V characteristic curves of a fucntion diode.</p>
+        <h4>Apparatus:</h4>
+        <p>
+          p-n junction diode, Regulated power suppply unit, a milliammeter of
+          range 0 to 20 mA, a micro ammeter of range 0 - 100 micro A, a
+          voltmeter of range 0 - 10V and another voltmeter of range 0 - 1V
+        </p>
+        <h4>Theory:</h4>
+        <h5>a. Forward bias:</h5>
+        <p>
+          When the P end lead of diode is connected to the positive terminal and
+          n end lead is connected to the negative terminal of a battery, then
+          the diode is said to be forward biased. The diode conducts the
+          electricity if the applied potential is greater than the barrier
+          potential. As the applied potential increases, the current strength
+          increases.
+        </p>
+        <h5>b. Reverse bias:</h5>
+        <p>
+          When p end lead of the diode is connected to the negative terminal and
+          n end lead is connected to positive terminal of the battery the diode
+          is said to be reverse biased. The minority carriers constitute some
+          flow of electricity. This current is the order of microamperes, and it
+          is called leakage current.
+        </p>
+        <h4>Procedure:</h4>
+        <h5>a. Forward bais:</h5>
+        <img class="img-fluid" src="1.png" />
+        <p>
+          Connections are made as shown in the circuit diagram using voltmeter
+          and ammeter with proper ranges. The resistance R<sub>s</sub> is
+          selected for the safe current through the diode.
+        </p>
+        <p>
+          The voltage across diode is kept at 0.1V. The corresponding
+          milliammeter reading I is notedm the potential difference across the
+          diode is increased in stepd of 0.1V and the corresponding milliammeter
+          reading I are noted. 8 reading are taken and tabulated. A graph is
+          drawn between the voltage and current. It is called the diode forward
+          characteristic. The straight line part of curve is extrapolated to cut
+          the voltage axis at a potential V<sub>k</sub>. This gives the knee
+          voltage.
+        </p>
+        <p>The forward resistance of diode is calculated using the formula,</p>
+        <p>\( r_f = \frac{\bigtriangleup V }{\bigtriangleup I} \)</p>
+        <h5>b. Reverse biase:</h5>
+        <p>
+          The connections are made as shown in the circuit diagram, selecting
+          the instruments of proper range. The voltage across the diode is kept
+          at 10V and the microammeter reading I is noted. The potential across
+          the diode is increased in steps of 5V and the corresponding currents
+          in micro amps are noted and tabulated. A graph is drawn between the
+          potential difference and current.
+        </p>
+        <h4>The graph:</h4>
+        <img class="img-fluid" src="2.png" />
+        <h4>Precautions:</h4>
+        <ul>
+          <li>
+            Diode should not be connected directly to the battery without series
+            resistance.
+          </li>
+          <li>
+            In reverse biase care must be taken so that the reverse biase
+            votlage is well below the break down votlage.
+          </li>
+          <li>
+            In forward bias, the potential difference applied must be increased
+            in steps of 0.01 taking care that the current is not too large.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
