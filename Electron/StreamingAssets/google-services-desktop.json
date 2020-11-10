@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "823972917294",
+    "firebase_url": "https://phylab-65237.firebaseio.com",
+    "project_id": "phylab-65237",
+    "storage_bucket": "phylab-65237.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823972917294:android:ca9e33cbfd2756c6e6afbf",
+        "android_client_info": {
+          "package_name": "com.Amrulla.PhyLab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "823972917294-kbq7gv2lsclgqikraftm1un45i90ijit.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNOrcNe24SjpVp1tEFErdbnfGN3rkSLBA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "823972917294-kbq7gv2lsclgqikraftm1un45i90ijit.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
