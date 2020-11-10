@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>PhyLab</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-		<style>
-		html {
-    box-sizing: border-box;
-}
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-html, body {
-    height: 100%;
-}
-canvas {
-    display: block;
-}
-body {
-    margin: 0;
-}
-#unity-container {
-    width: 100%;
-    height: 100%;
-}
-#unity-canvas {
-    width: 100%;
-    height: 100%;
-    background: #0E0018;
-}
-		
-</style>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <link rel="stylesheet" href="TemplateData/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <style>
+      html {
+        box-sizing: border-box;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      canvas {
+        display: block;
+      }
+      body {
+        margin: 0;
+      }
+      #unity-container {
+        width: 100%;
+        height: 100%;
+      }
+      #unity-canvas {
+        width: 100%;
+        height: 100%;
+        background: #0e0018;
+      }
+    </style>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-	  <canvas id="unity-canvas"></canvas>
-	  <div id="unity-loading-bar">
+      <canvas id="unity-canvas"></canvas>
+      <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
           <div id="unity-progress-bar-full"></div>
@@ -68,7 +70,7 @@ body {
       var loadingBar = document.querySelector("#unity-loading-bar");
       var progressBarFull = document.querySelector("#unity-progress-bar-full");
       var fullscreenButton = document.querySelector("#unity-fullscreen-button");
-	  var unityInstanceReal;
+      var unityInstanceReal;
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         container.className = "unity-mobile";
         config.devicePixelRatio = 1;
@@ -83,21 +85,22 @@ body {
       script.onload = () => {
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
-        }).then((unityInstance) => {
-		unityInstanceReal = unityInstance;
-          loadingBar.style.display = "none";
-          //fullscreenButton.onclick = () => {
-          //  unityInstance.SetFullscreen(1);
-          //};
-        }).catch((message) => {
-          alert(message);
-        });
+        })
+          .then((unityInstance) => {
+            unityInstanceReal = unityInstance;
+            loadingBar.style.display = "none";
+            //fullscreenButton.onclick = () => {
+            //  unityInstance.SetFullscreen(1);
+            //};
+          })
+          .catch((message) => {
+            alert(message);
+          });
       };
       document.body.appendChild(script);
     </script>
-	
-		<!-- unity_webview -->
-		<script type="text/javascript" src="unity-webview.js"></script>
-		 
+
+    <!-- unity_webview -->
+    <script type="text/javascript" src="unity-webview.js"></script>
   </body>
 </html>

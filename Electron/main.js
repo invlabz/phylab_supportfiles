@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow, net, dialog } = require('electron')
 
 if (require('electron-squirrel-startup')) return app.quit();
 
@@ -9,14 +9,42 @@ function createWindow () {
     icon: './Iconlogo.png',
     webPreferences: {
       nodeIntegration: false,
-	    devTools: true
+	    devTools: false
     }
   })
   win.maximize()
-  // win.setMenu(null)
+  win.setMenu(null)
   win.setMaximizable(false);
 
   win.loadFile('index.html')
+
+  const request = net.request("https://github.com/pamrulla/phylab_supportfiles/releases/latest"); 
+  request.on('redirect', (statusCode, method, redirectUrl, responseHeaders) => { 
+    console.log(`HEADERS: ${redirectUrl}`); 
+    console.log(redirectUrl.split("/v")[1])
+    const pkg = require('./package.json')
+    console.log(pkg.version);
+    if (redirectUrl.split("/v")[1] !== pkg.version)
+    {
+      const dialogOpts = {
+        type: 'info',
+        buttons: ['Download', 'Later'],
+        title: 'Application Update',
+        message: `Version `,
+        detail: 'A new version is available. It is highly recommend to install new version.'
+      }
+
+      dialog.showMessageBox(dialogOpts).then(({ response }) => {
+        if (response === 0) {
+          require("electron").shell.openExternal("https://github.com/pamrulla/phylab_supportfiles/releases/latest/download/PhyLabSetup.exe").then(() => {
+            app.exit(0)
+          });
+        }
+      })
+    }
+    
+    }); 
+  request.end();
 //   win.webContents.openDevTools()
 }
 
