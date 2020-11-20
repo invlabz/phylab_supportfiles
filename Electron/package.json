@@ -1,6 +1,6 @@
 {
   "name": "PhyLab",
-  "version": "0.0.8",
+  "version": "1.0.0",
   "description": "This is PhyLab desktop application",
   "repository": "pamrulla/phylab_supportfiles",
   "main": "main.js",

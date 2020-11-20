@@ -419,11 +419,37 @@ svg.active .svg-elem-5 {
   background-color: rgba(14, 102, 146, 0.7);
 }
 
+.download-section {
+  padding: 5em;
+  overflow: hidden;
+  position: relative;
+  background: url("../images/hero-bg.jpg") no-repeat center center/cover;
+  background-attachment: fixed;
+}
+
+.download-section:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(14, 102, 146, 0.7);
+}
+.download-section .section-title__h2 {
+  color: #ffffff;
+}
+
 .why-us-section .section-title__h2 {
   color: #ffffff;
 }
 
 .why-us-section .inner-item {
+  position: relative;
+  z-index: 2;
+}
+
+.download-section .inner-item {
   position: relative;
   z-index: 2;
 }
