@@ -1,677 +1,1675 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="robots" content="noindex, nofollow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="PhyLab is a virtual physics laboratory for intermediate students."
+    />
     <meta
       name="keywords"
       content="Physics, Intermediate, Practicals, Experiments, Virutal, Lab, Labs, Class 11, Class 12, +1, +2, 11, 12, Magnetic Lines Of Force, Vernier Calipers, Simple Pendulum, Concave Mirror, Junction Diode, Physical Balance, Parallelogram Law Of Forces, Specific Heat Of A Solid, Surface Tension Of A Liquid, Tangent Galvanometer, Apparent Expansion Of Liquid, Screw Guage, Transistor Characterstics, Force Constant Of A Spring, Convex Lens, Meter Bridge, Velocity Of Sound, Refractive Index Of A Prism, Boyle's Law, Ohms Law"
     />
-    <meta
-      name="description"
-      content="A virtual lab for Physics Intermediate students."
-    />
     <meta name="author" content="Patan Amrulla Khan" />
-    <title>
-      PhyLab | Lab experiments can be taught using the Internet, more
-      efficiently and less expensively.
-    </title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/style.css" />
 
-    <script id="mcjs">
-      !(function (c, h, i, m, p) {
-        (m = c.createElement(h)),
-          (p = c.getElementsByTagName(h)[0]),
-          (m.async = 1),
-          (m.src = i),
-          p.parentNode.insertBefore(m, p);
-      })(
-        document,
-        "script",
-        "https://chimpstatic.com/mcjs-connected/js/users/c82604623cdd911aadf376ed9/399d59b8567e0eccaf638934c.js"
-      );
-    </script>
-
-    <link
-      href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css"
-      rel="stylesheet"
-      type="text/css"
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+    <meta property="og:site_name" content="PhyLab" />
+    <!-- website name -->
+    <meta property="og:site" content="https://www.phylab.co.in" />
+    <!-- website link -->
+    <meta property="og:title" content="PhyLab" />
+    <!-- title shown in the actual shared post -->
+    <meta
+      property="og:description"
+      content="PhyLab is a virtual physics laboratory for intermeidate students"
     />
-    <link rel="stylesheet" href="./css/infinite-slider.css" />
+    <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" />
+    <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" />
+    <!-- where do you want your post to link to -->
+    <meta property="og:type" content="website" />
 
-    <style type="text/css">
-      #mc_embed_signup {
-        background: #fff;
-        clear: left;
-        font: 14px Helvetica, Arial, sans-serif;
-        width: 100%;
-      }
-      /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-    </style>
+    <!-- Website Title -->
+    <title>
+      PhyLab - A virtual physics laboratory for intermediate students
+    </title>
+
+    <!-- Styles -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/fontawesome-all.css" rel="stylesheet" />
+    <link href="css/swiper.css" rel="stylesheet" />
+    <link href="css/magnific-popup.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- Favicon  -->
+    <link rel="icon" href="images/favicon.ico" />
   </head>
-
-  <body>
-    <!-- HEADER SECTION START -->
-    <header class="site-header">
-      <div class="container">
-        <div class="row">
-          <div class="logo">
-            <a href="#main">
-              <img src="images/logo.png" alt="PhyLab" />
-              PhyLab
-            </a>
-          </div>
-          <div class="nav-toggle">
-            <span></span>
-          </div>
-          <nav class="navigation">
-            <ul>
-              <li><a href="#feature-section">Features</a></li>
-              <!-- <li><a href="#our-partners">Our Partners</a></li> -->
-              <li><a href="#why-phylab">Why PhyLab?</a></li>
-              <li><a href="#for-whom">Syllabus</a></li>
-              <li><a href="#our-team">Our Team</a></li>
-              <li>
-                <a class="action action-cta" href="/webgl">Launch</a>
-              </li>
-              <li>
-                <a class="action action-cta" href="#downloads">Downloads</a>
-              </li>
-              <!-- <li>
-                <a class="action action-cta" href="#contact">Subscribe</a>
-              </li> -->
-            </ul>
-          </nav>
-        </div>
+  <body data-spy="scroll" data-target=".fixed-top">
+    <!-- Preloader -->
+    <div class="spinner-wrapper">
+      <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
       </div>
-    </header>
-    <!-- HEADER SECTION END -->
+    </div>
+    <!-- end of preloader -->
 
-    <main class="main" id="main">
-      <!-- HERO SECTION START -->
-      <section class="hero">
-        <div class="hero-content wow fadeInUp">
-          <h1 class="hero-content__title">PhyLab</h1>
-          <p class="hero-content__desc">
-            Lab experiments can be taught using the Internet, more efficiently
-            and less expensively.
-          </p>
-          <div class="hero-content__action">
-            <a class="action action-cta" href="/webgl">Launch</a>
-          </div>
-          <!-- HERO SECTION STORE LINK START -->
-          <!-- <div class="hero-content__store">
-                    <a href="javascript:void(0)">
-                        <img src="images/icon-appstore.png" alt="Download on Appstore">
-                    </a>
-                    <a href="javascript:void(0)">
-                        <img src="images/icon-playstore.png" alt="Download on Playstore">
-                    </a>
-                </div> -->
-          <!-- HERO SECTION STORE LINK END -->
-        </div>
-      </section>
-      <!-- HERO SECTION END -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+      <div class="container">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
 
-      <!-- <section class="video-wrapper">
-      <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/mD4vMIvnnro"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </section> -->
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="index.html"
+          ><img src="images/logo.svg" alt="alternative"
+        /></a>
+        <a class="navbar-brand logo-text page-scroll" href="index.html"
+          >PhyLab</a
+        >
 
-      <!-- FEATURES SECTION START -->
-      <section class="feature-section" id="feature-section">
-        <div class="section-title">
-          <h2 class="section-title__h2">Features</h2>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4 feature-item">
-              <div class="feature-item__icon">
-                <svg
-                  version="1.1"
-                  id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 24 24"
-                  style="enable-background: new 0 0 24 24"
-                  xml:space="preserve"
+        <!-- Mobile Menu Toggle Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarsExampleDefault"
+          aria-controls="navbarsExampleDefault"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-awesome fas fa-bars"></span>
+          <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#header"
+                >HOME <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#features">FEATURES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#details">DETAILS</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#video">VIDEO</a>
+            </li>
+            <!-- Dropdown Menu -->
+            <!-- <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle page-scroll"
+                href="#video"
+                id="navbarDropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >VIDEO</a
+              >
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="article-details.html"
+                  ><span class="item-text">ARTICLE DETAILS</span></a
                 >
-                  <path
-                    class="svg-elem-1"
-                    d="M7,14.5L7,14.5c0.6,0,1,0.4,1,1v4v0.1c0,0.1,0,0.1,0,0.2S7.9,20,7.9,20.1l0,0l0,0c-0.2,0.3-0.5,0.4-0.8,0.4H3
-        c-0.6,0-1-0.4-1-1s0.4-1,1-1h1.4C2.9,16.7,2,14.4,2,12c0-0.4,0-0.7,0.1-1.1l0,0C2.2,10.4,2.7,10,3.2,10c0.5,0.1,0.9,0.6,0.9,1.1
-        C4,11.4,4,11.7,4,12c0,1.9,0.7,3.8,2,5.3v-1.8l0,0C6,14.9,6.4,14.5,7,14.5z M8.5,6L8.5,6c0.6,0,1,0.4,1,1S9,8,8.5,8h-4l0,0
-        C4.4,8,4.3,8,4.2,7.9c-0.1,0-0.1,0-0.2-0.1l0,0l0,0C3.8,7.7,3.7,7.7,3.7,7.6l0,0C3.6,7.4,3.6,7.3,3.5,7.2l0,0c0-0.1,0-0.1,0-0.2V3
-        c0-0.6,0.4-1,1-1s1,0.4,1,1v1.4C7.3,2.9,9.6,2,12,2c0.4,0,0.7,0,1.1,0.1l0,0C13.6,2.2,14,2.7,14,3.2c-0.1,0.5-0.6,0.9-1.1,0.9
-        C12.6,4,12.3,4,12,4c-2,0-3.8,0.7-5.3,2H8.5z M20.5,16.8L20.5,16.8c0,0.1,0,0.1,0,0.2v4c0,0.6-0.4,1-1,1s-1-0.4-1-1v-1.4
-        C16.7,21.1,14.4,22,12,22c-0.4,0-0.7,0-1.1-0.1c-0.5-0.1-0.9-0.6-0.9-1.1c0.1-0.5,0.6-0.9,1.1-0.9c0.3,0,0.6,0.1,0.9,0.1
-        c1.9,0,3.8-0.7,5.3-2h-1.8c-0.6,0-1-0.4-1-1s0.4-1,1-1h4h0.1c0.1,0,0.3,0.1,0.4,0.1l0,0l0,0c0.1,0.1,0.2,0.2,0.2,0.2l0,0
-        C20.4,16.6,20.4,16.7,20.5,16.8z M21,5.5h-1.4C21.1,7.3,22,9.6,22,12c0,0.4,0,0.7-0.1,1.1c-0.1,0.5-0.5,0.9-1,0.9h-0.1
-        c-0.5-0.1-0.9-0.6-0.9-1.1c0-0.3,0.1-0.6,0.1-0.9c0-1.9-0.7-3.8-2-5.3v1.8c0,0.6-0.4,1-1,1s-1-0.4-1-1v-4V4.4c0-0.1,0.1-0.3,0.1-0.4
-        l0,0l0,0c0.1-0.1,0.1-0.2,0.2-0.2l0,0c0.1-0.1,0.2-0.1,0.3-0.1l0,0c0.1,0,0.1,0,0.2,0h4c0.6,0,1,0.4,1,1S21.5,5.5,21,5.5z"
-                  ></path>
-                </svg>
+                <div class="dropdown-items-divide-hr"></div>
+                <a class="dropdown-item" href="terms-conditions.html"
+                  ><span class="item-text">TERMS CONDITIONS</span></a
+                >
+                <div class="dropdown-items-divide-hr"></div>
+                <a class="dropdown-item" href="privacy-policy.html"
+                  ><span class="item-text">PRIVACY POLICY</span></a
+                >
               </div>
-              <h3 class="feature-item__title">Simulator</h3>
-              <p class="feature-item__desc">
-                To perform <br />
-                experiment
-              </p>
-            </div>
-            <div class="col-md-4 feature-item">
-              <div class="feature-item__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                  <path
-                    class="svg-elem-2"
-                    d="M21,14h-1V4h1c0.6,0,1-0.4,1-1s-0.4-1-1-1H3C2.4,2,2,2.4,2,3s0.4,1,1,1h1v10H3c-0.6,0-1,0.4-1,1s0.4,1,1,1h8
-	v1.1l-4.6,3c-0.5,0.3-0.6,0.9-0.3,1.4C6.3,21.8,6.6,22,7,22c0.2,0,0.4-0.1,0.6-0.2l3.4-2.3V21c0,0.6,0.4,1,1,1s1-0.4,1-1v-1.5
-	l3.5,2.3c0.2,0.1,0.4,0.2,0.5,0.2c0.6,0,1-0.5,1-1c0-0.3-0.2-0.6-0.4-0.8l-4.6-3V16h8c0.6,0,1-0.4,1-1S21.6,14,21,14z M18,14H6V4h12
-	V14z M9.6,12.3c0.5,0.3,1.2,0.3,1.8,0l3-1.7c0.8-0.5,1.1-1.6,0.6-2.4c-0.1-0.2-0.3-0.4-0.6-0.6l-3-1.7c-0.5-0.3-1.2-0.3-1.8,0
-	C9.1,6.1,8.7,6.7,8.7,7.3v3.5C8.7,11.4,9.1,12,9.6,12.3z M10.7,7.7L13,9l-2.3,1.3L10.7,7.7z"
-                  />
-                </svg>
-              </div>
-              <h3 class="feature-item__title">Tutorial</h3>
-              <p class="feature-item__desc">
-                Understand how <br />
-                to perform experiment
-              </p>
-            </div>
-            <div class="col-md-4 feature-item">
-              <div class="feature-item__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                  <path
-                    class="svg-elem-3"
-                    d="M15,6H9C8.4,6,8,6.4,8,7v4c0,0.6,0.4,1,1,1h6c0.6,0,1-0.4,1-1V7C16,6.4,15.6,6,15,6z M14,10h-4V8h4V10z M17,2H5
-    C4.4,2,4,2.4,4,3v18c0,0.6,0.4,1,1,1h12c1.7,0,3-1.3,3-3V5C20,3.3,18.7,2,17,2z M18,19c0,0.6-0.4,1-1,1H6V4h11c0.6,0,1,0.4,1,1V19z"
-                  />
-                </svg>
-              </div>
-              <h3 class="feature-item__title">Theory</h3>
-              <p class="feature-item__desc">
-                Read through the <br />
-                Theory behind
-              </p>
-            </div>
-            <div class="col-md-4 feature-item">
-              <div class="feature-item__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                  <path
-                    class="svg-elem-4"
-                    d="M11.3,15.3c0,0-0.1,0.1-0.1,0.1c0,0.1-0.1,0.1-0.1,0.2c0,0.1,0,0.1-0.1,0.2c0,0.1,0,0.1,0,0.2
-	c0,0.1,0,0.3,0.1,0.4c0.1,0.3,0.3,0.4,0.5,0.5c0.2,0.1,0.5,0.1,0.8,0c0.3-0.1,0.4-0.3,0.5-0.5c0-0.1,0.1-0.3,0.1-0.4
-	c0-0.3-0.1-0.5-0.3-0.7C12.3,14.9,11.7,14.9,11.3,15.3C11.3,15.3,11.3,15.3,11.3,15.3z M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10
-	s10-4.5,10-10S17.5,2,12,2z M12,20c-4.4,0-8-3.6-8-8s3.6-8,8-8s8,3.6,8,8S16.4,20,12,20z M12,7c-1.1,0-2.1,0.6-2.6,1.5
-	C9.1,9,9.2,9.6,9.7,9.9c0.5,0.3,1.1,0.2,1.4-0.3c0,0,0,0,0-0.1C11.3,9.2,11.6,9,12,9c0.6,0,1,0.4,1,1s-0.4,1-1,1s-1,0.4-1,1v1
-	c0,0.6,0.4,1,1,1s1-0.4,1-1v-0.2c1.6-0.6,2.4-2.3,1.8-3.8C14.4,7.8,13.3,7,12,7z"
-                  />
-                </svg>
-              </div>
-              <h3 class="feature-item__title">Viva Voce</h3>
-              <p class="feature-item__desc">
-                Test your <br />
-                knowledge
-              </p>
-            </div>
-            <div class="col-md-4 feature-item">
-              <div class="feature-item__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                  <path
-                    class="svg-elem-4"
-                    d="M13.3,13.8L13,14.1v-2.6c0-0.6-0.4-1-1-1s-1,0.4-1,1v2.6l-0.3-0.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l2,2
-                                c0.1,0.1,0.2,0.2,0.3,0.2c0.2,0.1,0.5,0.1,0.8,0c0.1,0,0.2-0.1,0.3-0.2l2-2c0.4-0.4,0.4-1,0-1.4S13.7,13.4,13.3,13.8z M19,5.5h-6.3
-                                l-0.3-1c-0.4-1.2-1.6-2-2.8-2H5c-1.7,0-3,1.3-3,3v13c0,1.7,1.3,3,3,3h14c1.7,0,3-1.3,3-3v-10C22,6.8,20.7,5.5,19,5.5z M20,18.5
-                                c0,0.6-0.4,1-1,1H5c-0.6,0-1-0.4-1-1v-13c0-0.6,0.4-1,1-1h4.6c0.4,0,0.8,0.3,0.9,0.7l0.5,1.6c0.1,0.4,0.5,0.7,0.9,0.7h7
-                                c0.6,0,1,0.4,1,1V18.5z"
-                  />
-                </svg>
-              </div>
-              <h3 class="feature-item__title">Download record</h3>
-              <p class="feature-item__desc">
-                Download your complete <br />
-                record in pdf format
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- FEATURES SECTION END -->
+            </li> -->
+            <!-- end of dropdown menu -->
 
-      <!-- WHY PHYLAB SECTION START -->
-      <section class="why-us-section" id="why-phylab">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-sm-12 inner-item">
-              <div
-                class="inner-item__left wow slideInUp"
-                data-wow-delay="0.7s"
-                id="inner-item-left"
-              >
-                <img src="images/iphones.png" alt="PhyLab App" />
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12 inner-item">
-              <div
-                class="inner-item__right wow slideInUp"
-                data-wow-delay="0.7s"
-              >
-                <div class="section-title align-left">
-                  <h2 class="section-title__h2">Why PhyLab?</h2>
-                </div>
-                <div class="inner-item__desc">
-                  <p>
-                    PhyLab can be made available to students with no access to
-                    physical labs or where equipment are not available owing to
-                    being scarce or costly. This helps them compete with
-                    students in better schools and bridges the digital divide
-                    and geographical distances.
-                  </p>
-                  <!-- <p>
-                    The development of PhyLab includes the study and use of
-                    mathematical techniques to demonstrate the various complex
-                    functions in diverse areas of science. This makes use of
-                    complex user-interactive simulations and detailed
-                    mathematical animations. PhyLab combine technology
-                    resources, automation, along with tried and true training
-                    concepts. They are richly featured platforms and are meant
-                    to provide a compelling and personalized experience for
-                    learners, one that goes beyond just looking at content or
-                    interacting with simulations. They enable hands-on training
-                    whenever and wherever it’s needed.
-                  </p> -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- WHY PHYLAB SECTION END -->
-
-      <!-- USEFUL FOR SECTION START -->
-      <section class="target-user-section" id="for-whom">
-        <div class="section-title">
-          <h2 class="section-title__h2">Syllabus</h2>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-sm-12">
-              <div class="target-item target-item--left">
-                <div class="target-item__inner">
-                  <h3 class="target-item__title">Class 11</h3>
-                  <ol class="target-item__desc">
-                    <li>Vernier Calipers</li>
-                    <li>Screw Guage</li>
-                    <li>Physical Balance</li>
-                    <li>Simple Pendulum</li>
-                    <li>Parallelogram law of forces</li>
-                    <li>Force constant of a spring</li>
-                    <li>Surface tension of a liquid</li>
-                    <li>Apparent expansion of liquid</li>
-                    <li>Boyle's Law</li>
-                    <li>Specific heat of a solid</li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <div class="target-item target-item--right">
-                <div class="target-item__inner">
-                  <h3 class="target-item__title">Class 12</h3>
-                  <ol class="target-item__desc">
-                    <li>Velocity of sound</li>
-                    <li>Concave Mirror</li>
-                    <li>Convex Lens</li>
-                    <li>Magnetic Lines of force</li>
-                    <li>Refractive index of a prism</li>
-                    <li>Tangent Galvanometer</li>
-                    <li>Ohm's Law</li>
-                    <li>Meter Bridge</li>
-                    <li>Junction Diode</li>
-                    <li>Transistor characteristics</li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- USEFUL FOR SECTION END -->
-
-      <!-- Our Partners Section -->
-      <!-- <div class="download-section" id="our-partners">
-        <div class="section-title inner-item">
-          <h2 class="section-title__h2">Our Partners</h2>
-        </div>
-
-        <div class="frame" id="cycleitems">
-          <ul class="clearfix">
-            <li>
-              <div class="target-item target-item--left">
-                <div class="target-item__inner">
-                  <img src="images/khan.jpg" class="avatar" />
-                  <h3><a href="#" target="_blank">College Name</a></h3>
-                  <p>City</p>
-                </div>
-              </div>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#downloads">DOWNLOADS</a>
             </li>
-            <li>
-              <div class="target-item target-item--left">
-                <div class="target-item__inner">
-                  <img src="images/khan.jpg" class="avatar" />
-                  <h3><a href="#" target="_blank">College Name</a></h3>
-                  <p>City</p>
-                </div>
-              </div>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#pricing">PRICING</a>
             </li>
-            <li>
-              <div class="target-item target-item--left">
-                <div class="target-item__inner">
-                  <img src="images/khan.jpg" class="avatar" />
-                  <h3><a href="#" target="_blank">College Name</a></h3>
-                  <p>City</p>
-                </div>
-              </div>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#team">TEAM</a>
             </li>
-            <li>
-              <div class="target-item target-item--left">
-                <div class="target-item__inner">
-                  <img src="images/khan.jpg" class="avatar" />
-                  <h3><a href="#" target="_blank">College Name</a></h3>
-                  <p>City</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="target-item target-item--left">
-                <div class="target-item__inner">
-                  <img src="images/khan.jpg" class="avatar" />
-                  <h3><a href="#" target="_blank">College Name</a></h3>
-                  <p>City</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="target-item target-item--left">
-                <div class="target-item__inner">
-                  <img src="images/khan.jpg" class="avatar" />
-                  <h3><a href="#" target="_blank">College Name</a></h3>
-                  <p>City</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="target-item target-item--left">
-                <div class="target-item__inner">
-                  <img src="images/khan.jpg" class="avatar" />
-                  <h3><a href="#" target="_blank">College Name</a></h3>
-                  <p>City</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="target-item target-item--left">
-                <div class="target-item__inner">
-                  <img src="images/khan.jpg" class="avatar" />
-                  <h3><a href="#" target="_blank">College Name</a></h3>
-                  <p>City</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="target-item target-item--left">
-                <div class="target-item__inner">
-                  <img src="images/khan.jpg" class="avatar" />
-                  <h3><a href="#" target="_blank">College Name</a></h3>
-                  <p>City</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="target-item target-item--left">
-                <div class="target-item__inner">
-                  <img src="images/khan.jpg" class="avatar" />
-                  <h3><a href="#" target="_blank">College Name</a></h3>
-                  <p>City</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="target-item target-item--left">
-                <div class="target-item__inner">
-                  <img src="images/khan.jpg" class="avatar" />
-                  <h3><a href="#" target="_blank">College Name</a></h3>
-                  <p>City</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="target-item target-item--left">
-                <div class="target-item__inner">
-                  <img src="images/khan.jpg" class="avatar" />
-                  <h3><a href="#" target="_blank">College Name</a></h3>
-                  <p>City</p>
-                </div>
-              </div>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#contactus">CONTACT US</a>
             </li>
           </ul>
+          <span class="nav-item">
+            <a class="btn-outline-sm" href="https://www.phylab.co.in/webgl"
+              >SIGN IN</a
+            >
+          </span>
+          <span class="nav-item">
+            <a class="btn-outline-sm" href="#pricing">SIGN UP</a>
+          </span>
         </div>
+      </div>
+      <!-- end of container -->
+    </nav>
+    <!-- end of navbar -->
+    <!-- end of navigation -->
 
-        <ul class="pages"></ul>
-      </div> -->
-
-      <!-- Download SECTION START -->
-
-      <section class="download-section" id="downloads">
-        <div class="section-title inner-item">
-          <h2 class="section-title__h2">Downloads</h2>
-        </div>
-        <div class="container section-title inner-item">
-          <a
-            class="action action-cta"
-            href="https://github.com/pamrulla/phylab_supportfiles/releases/latest/download/PhyLabSetup.exe"
-            target="_blank"
-            >Windows 64 bit</a
-          >
-        </div>
-      </section>
-
-      <!-- TEAM SECTION START -->
-      <section class="target-user-section" id="our-team">
-        <div class="section-title">
-          <h2 class="section-title__h2">Our Team</h2>
-        </div>
+    <!-- Header -->
+    <header id="header" class="header">
+      <div class="header-content">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 col-sm-12">
-              <div class="target-item target-item--left">
-                <div class="target-item__inner">
-                  <img src="images/khan.jpg" class="avatar" />
-                  <h3 class="target-item__title">Patan Amrulla Khan</h3>
-                  <p class="target-item__desc">Founder, CTO</p>
-                  <p class="target-item__desc">
-                    MCA, JNTU Kakinada, 10+ years as Software Engineer
-                  </p>
-                </div>
+            <div class="col-lg-6 col-xl-5">
+              <div class="text-container">
+                <h1>PhyLab, A Virtual Physics Lab</h1>
+                <h5>For Intermediate Students</h5>
+                <p class="p-large">
+                  A tool to master your physics practicals and excel in
+                  practical exams.
+                </p>
+                <a class="btn-solid-lg page-scroll" href="#pricing">SIGN UP</a>
               </div>
+              <!-- end of text-container -->
             </div>
-            <div class="col-md-6 col-sm-12">
-              <div class="target-item target-item--right">
-                <div class="target-item__inner">
-                  <img src="images/reddy.jpg" class="avatar" />
-                  <h3 class="target-item__title">K.V.V. Gangadhar Reddy</h3>
-                  <p class="target-item__desc">Co-Founder, CMO</p>
-                  <p class="target-item__desc">
-                    MCA, GITAM Vizag, Software Engineer
-                  </p>
+            <!-- end of col -->
+            <div class="col-lg-6 col-xl-7">
+              <div class="image-container">
+                <div class="img-wrapper">
+                  <img
+                    class="img-fluid"
+                    src="images/main.png"
+                    alt="alternative"
+                  />
                 </div>
+                <!-- end of img-wrapper -->
               </div>
+              <!-- end of image-container -->
             </div>
+            <!-- end of col -->
           </div>
+          <!-- end of row -->
         </div>
-      </section>
-      <!-- TEAM SECTION END -->
+        <!-- end of container -->
+      </div>
+      <!-- end of header-content -->
+    </header>
+    <!-- end of header -->
+    <svg
+      class="header-frame"
+      data-name="Layer 1"
+      xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="none"
+      viewBox="0 0 1920 310"
+    >
+      <defs>
+        <style>
+          .cls-1 {
+            fill: #11cafe;
+          }
+        </style>
+      </defs>
+      <title>header-frame</title>
+      <path
+        class="cls-1"
+        d="M0,283.054c22.75,12.98,53.1,15.2,70.635,14.808,92.115-2.077,238.3-79.9,354.895-79.938,59.97-.019,106.17,18.059,141.58,34,47.778,21.511,47.778,21.511,90,38.938,28.418,11.731,85.344,26.169,152.992,17.971,68.127-8.255,115.933-34.963,166.492-67.393,37.467-24.032,148.6-112.008,171.753-127.963,27.951-19.26,87.771-81.155,180.71-89.341,72.016-6.343,105.479,12.388,157.434,35.467,69.73,30.976,168.93,92.28,256.514,89.405,100.992-3.315,140.276-41.7,177-64.9V0.24H0V283.054Z"
+      />
+    </svg>
+    <!-- end of header -->
 
-      <!-- CONTACT SECTION START -->
-      <section class="contact-section" id="contact">
-        <div class="section-title">
-          <h2 class="section-title__h2">Ready to know more?</h2>
+    <!-- Customers -->
+    <div class="slider-1" style="display: none">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Image Slider -->
+            <div class="slider-container">
+              <div class="swiper-container image-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      class="img-fluid"
+                      src="images/customer-logo-1.png"
+                      alt="alternative"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="img-fluid"
+                      src="images/customer-logo-2.png"
+                      alt="alternative"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="img-fluid"
+                      src="images/customer-logo-3.png"
+                      alt="alternative"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="img-fluid"
+                      src="images/customer-logo-4.png"
+                      alt="alternative"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="img-fluid"
+                      src="images/customer-logo-5.png"
+                      alt="alternative"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="img-fluid"
+                      src="images/customer-logo-6.png"
+                      alt="alternative"
+                    />
+                  </div>
+                </div>
+                <!-- end of swiper-wrapper -->
+              </div>
+              <!-- end of swiper container -->
+            </div>
+            <!-- end of slider-container -->
+            <!-- end of image slider -->
+          </div>
+          <!-- end of col -->
         </div>
-        <div class="container">
-          <form
-            class="contact-form"
-            action="https://gmail.us17.list-manage.com/subscribe/post?u=c82604623cdd911aadf376ed9&amp;id=0882705662"
-            method="post"
-            id="mc-embedded-subscribe-form"
-            name="mc-embedded-subscribe-form"
-            class="validate"
-            target="_blank"
-            novalidate
-          >
-            <div class="form-group">
-              <input
-                class="form-input"
-                type="text"
-                name="FNAME"
-                id="name"
-                placeholder="Your name"
-                required
-              />
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of slider-1 -->
+    <!-- end of customers -->
+
+    <!-- Description -->
+    <div class="cards-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="above-heading">DESCRIPTION</div>
+            <h2 class="h2-heading">
+              PhyLab Will Bring Physics Lab into Your Palm
+            </h2>
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Card -->
+            <div class="card">
+              <div class="card-image">
+                <img
+                  class="img-fluid"
+                  src="images/4354122.jpg"
+                  alt="alternative"
+                />
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Learn Concept</h4>
+                <p>
+                  It's effortless to learn the concept and function of apparatus
+                  any time and anywhere
+                </p>
+              </div>
             </div>
-            <div class="form-group">
-              <input
-                class="form-input"
-                type="email"
-                name="EMAIL"
-                id="email"
-                placeholder="Email address"
-                required
-              />
+            <!-- end of card -->
+
+            <!-- Card -->
+            <div class="card">
+              <div class="card-image">
+                <img
+                  class="img-fluid"
+                  src="images/3151.jpg"
+                  alt="alternative"
+                />
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Perform Practicals</h4>
+                <p>
+                  PhyLab gives freedom to perform practicals any number of times
+                  without any time limits
+                </p>
+              </div>
             </div>
-            <div style="position: absolute; left: -5000px" aria-hidden="true">
-              <input
-                type="text"
-                name="b_c82604623cdd911aadf376ed9_0882705662"
-                tabindex="-1"
-                value=""
-              />
+            <!-- end of card -->
+
+            <!-- Card -->
+            <div class="card">
+              <div class="card-image">
+                <img
+                  class="img-fluid"
+                  src="images/3841.jpg"
+                  alt="alternative"
+                />
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Excel Exams</h4>
+                <p>
+                  By the knowledge and experience gained using our PhyLab, you
+                  can effortlessly clear practical exams.
+                </p>
+              </div>
             </div>
-            <div class="form-group form-group-checkbox">
-              <label>
-                <input type="checkbox" name="gdpr" required />
-                <span
-                  >Yes, please subscribe me to PhyLabs’s newsletter. You can
-                  unsubscribe at anytime.</span
+            <!-- end of card -->
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of cards-1 -->
+    <!-- end of description -->
+
+    <!-- Features -->
+    <div id="features" class="tabs">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="above-heading">FEATURES</div>
+            <h2 class="h2-heading">Virtual Labs</h2>
+            <p class="p-heading">
+              Virtual labs are simulated learning environments that allow you to
+              complete laboratory experiments online and explore concepts and
+              theories without stepping into a physical science lab.
+            </p>
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Tabs Links -->
+            <ul class="nav nav-tabs" id="argoTabs" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  id="nav-tab-1"
+                  data-toggle="tab"
+                  href="#tab-1"
+                  role="tab"
+                  aria-controls="tab-1"
+                  aria-selected="true"
+                  ><i class="fas fa-list"></i>Simulator</a
                 >
-              </label>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="nav-tab-2"
+                  data-toggle="tab"
+                  href="#tab-2"
+                  role="tab"
+                  aria-controls="tab-2"
+                  aria-selected="false"
+                  ><i class="fas fa-envelope-open-text"></i>Video Tutorial</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="nav-tab-3"
+                  data-toggle="tab"
+                  href="#tab-3"
+                  role="tab"
+                  aria-controls="tab-3"
+                  aria-selected="false"
+                  ><i class="fas fa-chart-bar"></i>Theory</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="nav-tab-4"
+                  data-toggle="tab"
+                  href="#tab-4"
+                  role="tab"
+                  aria-controls="tab-4"
+                  aria-selected="false"
+                  ><i class="fas fa-chart-bar"></i>Viva-Voce</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="nav-tab-5"
+                  data-toggle="tab"
+                  href="#tab-5"
+                  role="tab"
+                  aria-controls="tab-5"
+                  aria-selected="false"
+                  ><i class="fas fa-chart-bar"></i>Download Record</a
+                >
+              </li>
+            </ul>
+            <!-- end of tabs links -->
+
+            <!-- Tabs Content -->
+            <div class="tab-content" id="argoTabsContent">
+              <!-- Tab -->
+              <div
+                class="tab-pane fade show active"
+                id="tab-1"
+                role="tabpanel"
+                aria-labelledby="tab-1"
+              >
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="image-container">
+                      <img
+                        class="img-fluid"
+                        src="images/sim.gif"
+                        alt="alternative"
+                      />
+                    </div>
+                    <!-- end of image-container -->
+                  </div>
+                  <!-- end of col -->
+                  <div class="col-lg-6">
+                    <div class="text-container">
+                      <h3>A Play-Ground For You</h3>
+                      <p>
+                        It's like playing a video game in a controlled
+                        environment. You will spend a lot of time here to
+                        understand and excel in the experiment.
+                      </p>
+                      <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                          <i class="fas fa-square"></i>
+                          <div class="media-body">
+                            You perform the experiment & record the
+                            observations.
+                          </div>
+                        </li>
+                        <li class="media">
+                          <i class="fas fa-square"></i>
+                          <div class="media-body">
+                            You do all the calculations & submit results.
+                          </div>
+                        </li>
+                        <li class="media">
+                          <i class="fas fa-square"></i>
+                          <div class="media-body">
+                            The Simulator validates your results and notifies
+                            you.
+                          </div>
+                        </li>
+                        <li class="media">
+                          <i class="fas fa-square"></i>
+                          <div class="media-body">
+                            The Simulator stores all your experiment data for
+                            record generation.
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- end of text-container -->
+                  </div>
+                  <!-- end of col -->
+                </div>
+                <!-- end of row -->
+              </div>
+              <!-- end of tab-pane -->
+              <!-- end of tab -->
+
+              <!-- Tab -->
+              <div
+                class="tab-pane fade"
+                id="tab-2"
+                role="tabpanel"
+                aria-labelledby="tab-2"
+              >
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="image-container">
+                      <img
+                        class="img-fluid"
+                        src="images/tutorial.gif"
+                        alt="alternative"
+                      />
+                    </div>
+                    <!-- end of image-container -->
+                  </div>
+                  <!-- end of col -->
+                  <div class="col-lg-6">
+                    <div class="text-container">
+                      <h3>A Video Guide To Assist You</h3>
+                      <p>
+                        A video tutorial explains how to perform the experiment
+                        on PhyLab application.
+                      </p>
+                      <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                          <i class="fas fa-square"></i>
+                          <div class="media-body">
+                            Explains what the aim of the experiment is.
+                          </div>
+                        </li>
+                        <li class="media">
+                          <i class="fas fa-square"></i>
+                          <div class="media-body">
+                            Explains how to perform the experiment & record
+                            observations.
+                          </div>
+                        </li>
+                        <li class="media">
+                          <i class="fas fa-square"></i>
+                          <div class="media-body">
+                            Explains how to calculate the results and submit.
+                          </div>
+                        </li>
+                        <li class="media">
+                          <i class="fas fa-square"></i>
+                          <div class="media-body">
+                            Explains how to generate PDF record.
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- end of text-container -->
+                  </div>
+                  <!-- end of col -->
+                </div>
+                <!-- end of row -->
+              </div>
+              <!-- end of tab-pane -->
+              <!-- end of tab -->
+
+              <!-- Tab -->
+              <div
+                class="tab-pane fade"
+                id="tab-3"
+                role="tabpanel"
+                aria-labelledby="tab-3"
+              >
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="image-container">
+                      <img
+                        class="img-fluid"
+                        src="images/theory.gif"
+                        alt="alternative"
+                      />
+                    </div>
+                    <!-- end of image-container -->
+                  </div>
+                  <!-- end of col -->
+                  <div class="col-lg-6">
+                    <div class="text-container">
+                      <h3>A Textual Guide</h3>
+                      <p>
+                        Provides the text-based approach to the concept behind
+                        the experiment.
+                      </p>
+                      <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                          <i class="fas fa-square"></i>
+                          <div class="media-body">
+                            Explains the concept and formulea to use.
+                          </div>
+                        </li>
+                        <li class="media">
+                          <i class="fas fa-square"></i>
+                          <div class="media-body">
+                            Explains what apparatus are needed.
+                          </div>
+                        </li>
+                        <li class="media">
+                          <i class="fas fa-square"></i>
+                          <div class="media-body">
+                            Explains precautions to take while doing experiment
+                            in the real lab.
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- end of text-container -->
+                  </div>
+                  <!-- end of col -->
+                </div>
+                <!-- end of row -->
+              </div>
+              <!-- end of tab-pane -->
+              <!-- end of tab -->
+
+              <!-- Tab -->
+              <div
+                class="tab-pane fade"
+                id="tab-4"
+                role="tabpanel"
+                aria-labelledby="tab-4"
+              >
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="image-container">
+                      <img
+                        class="img-fluid"
+                        src="images/viva.gif"
+                        alt="alternative"
+                      />
+                    </div>
+                    <!-- end of image-container -->
+                  </div>
+                  <!-- end of col -->
+                  <div class="col-lg-6">
+                    <div class="text-container">
+                      <h3>Tool To Test Your Knowledge</h3>
+                      <p>
+                        Provides five randomly selected multiple choice
+                        questions to test your knowledge.
+                      </p>
+                    </div>
+                    <!-- end of text-container -->
+                  </div>
+                  <!-- end of col -->
+                </div>
+                <!-- end of row -->
+              </div>
+              <!-- end of tab-pane -->
+              <!-- end of tab -->
+
+              <!-- Tab -->
+              <div
+                class="tab-pane fade"
+                id="tab-5"
+                role="tabpanel"
+                aria-labelledby="tab-5"
+              >
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="image-container">
+                      <img
+                        class="img-fluid"
+                        src="images/record.gif"
+                        alt="alternative"
+                      />
+                    </div>
+                    <!-- end of image-container -->
+                  </div>
+                  <!-- end of col -->
+                  <div class="col-lg-6">
+                    <div class="text-container">
+                      <h3>A Proof For You & Lecturer</h3>
+                      <p>
+                        Generates a PDF report of your completed experiment.
+                      </p>
+                      <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                          <i class="fas fa-square"></i>
+                          <div class="media-body">
+                            Generate any number of times, no limit.
+                          </div>
+                        </li>
+                        <li class="media">
+                          <i class="fas fa-square"></i>
+                          <div class="media-body">
+                            You are free to print it & show to your lecturer as
+                            a proof.
+                          </div>
+                        </li>
+                        <li class="media">
+                          <i class="fas fa-square"></i>
+                          <div class="media-body">
+                            You can attach it to your record.
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- end of text-container -->
+                  </div>
+                  <!-- end of col -->
+                </div>
+                <!-- end of row -->
+              </div>
+              <!-- end of tab-pane -->
+              <!-- end of tab -->
             </div>
-            <div class="form-action">
-              <button class="action action-primary">Subscribe</button>
-            </div>
-          </form>
+            <!-- end of tab content -->
+            <!-- end of tabs content -->
+          </div>
+          <!-- end of col -->
         </div>
-      </section>
-      <!-- CONTACT SECTION END -->
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of tabs -->
+    <!-- end of features -->
 
-      <!-- Begin Mailchimp Signup Form -->
-
-      <!-- <div id="mc_embed_signup">
-        <form
-          action="https://gmail.us17.list-manage.com/subscribe/post?u=c82604623cdd911aadf376ed9&amp;id=0882705662"
-          method="post"
-          id="mc-embedded-subscribe-form"
-          name="mc-embedded-subscribe-form"
-          class="validate"
-          target="_blank"
-          novalidate
-        >
-          <div id="mc_embed_signup_scroll">
-            <label for="mce-EMAIL">Subscribe</label>
-            <input
-              type="email"
-              value=""
-              name="EMAIL"
-              class="email"
-              id="mce-EMAIL"
-              placeholder="email address"
-              required
-            />
-            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-      <!-- <div style="position: absolute; left: -5000px;" aria-hidden="true">
-              <input
-                type="text"
-                name="b_c82604623cdd911aadf376ed9_0882705662"
-                tabindex="-1"
-                value=""
+    <!-- Details -->
+    <div id="details" class="basic-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="text-container">
+              <h2>
+                Now Is The Time To Upgrade Your Chances To Excel In The Exams
+              </h2>
+              <p>
+                Target the right skills for your exams with the help of
+                PhyLabs's patented segmentation technology and move a step ahead
+                in reaching your goals.
+              </p>
+              <ul class="list-unstyled li-space-lg">
+                <li class="media">
+                  <i class="fas fa-square"></i>
+                  <div class="media-body">
+                    Access the virtual physics lab any time, anywhere, and any
+                    platform.
+                  </div>
+                </li>
+                <li class="media">
+                  <i class="fas fa-square"></i>
+                  <div class="media-body">
+                    No fear of damaging equipement & no overhead head cost to
+                    replace requipments.
+                  </div>
+                </li>
+                <li class="media">
+                  <i class="fas fa-square"></i>
+                  <div class="media-body">
+                    Repeat multiple times with no limits.
+                  </div>
+                </li>
+                <li class="media">
+                  <i class="fas fa-square"></i>
+                  <div class="media-body">
+                    The practicals follow with State's intermediate board
+                    syllabus.
+                  </div>
+                </li>
+              </ul>
+              <a class="btn-solid-reg page-scroll" href="#pricing">SIGN UP</a>
+            </div>
+            <!-- end of text-container -->
+          </div>
+          <!-- end of col -->
+          <div class="col-lg-6">
+            <div class="image-container">
+              <img
+                class="img-fluid"
+                src="images/details.gif"
+                alt="alternative"
               />
             </div>
-            <div class="clear">
-              <input
-                type="submit"
-                value="Subscribe"
-                name="subscribe"
-                id="mc-embedded-subscribe"
-                class="button"
-              />
+            <!-- end of image-container -->
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of basic-1 -->
+    <!-- end of details -->
+
+    <!-- Video -->
+    <div id="video" class="basic-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Video Preview -->
+            <div class="image-container">
+              <div class="video-wrapper">
+                <a
+                  class="popup-youtube"
+                  href="https://www.youtube.com/watch?v=mD4vMIvnnro"
+                  data-effect="fadeIn"
+                >
+                  <img
+                    class="img-fluid"
+                    src="images/video-image.png"
+                    alt="alternative"
+                  />
+                  <span class="video-play-button">
+                    <span></span>
+                  </span>
+                </a>
+              </div>
+              <!-- end of video-wrapper -->
+            </div>
+            <!-- end of image-container -->
+            <!-- end of video preview -->
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of basic-2 -->
+    <!-- end of video -->
+
+    <!-- Downloads -->
+    <div class="cards-1" id="downloads">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="above-heading">Downloads</div>
+            <h2 class="h2-heading">Access PhyLab On Multple Platforms</h2>
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Card -->
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Windows 64 bit</h4>
+                <p>Use PhyLab on your windows desktop of laptop</p>
+                <a
+                  class="nav-link"
+                  href="https://github.com/pamrulla/phylab_supportfiles/releases/latest/download/PhyLabSetup.exe"
+                  role="tab"
+                  target="_black"
+                  ><img
+                    class="img-fluid"
+                    src="images/windows-badge.png"
+                    alt="alternative"
+                /></a>
+              </div>
+            </div>
+            <!-- end of card -->
+
+            <!-- Card -->
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Web</h4>
+                <p>
+                  Access PhyLab in your browser Chrome or FireFox or Edge or
+                  Safari
+                </p>
+                <a
+                  class="nav-link"
+                  href="https://www.phylab.co.in/webgl"
+                  target="_black"
+                  ><img
+                    class="img-fluid"
+                    src="images/launch_web.png"
+                    alt="alternative"
+                /></a>
+              </div>
+            </div>
+            <!-- end of card -->
+
+            <!-- Card -->
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Android</h4>
+                <p>Access PhyLab on your android mobile phone</p>
+                <img
+                  class="img-fluid"
+                  src="images/coming-soon5-1.png"
+                  alt="alternative"
+                />
+                <!-- <a
+                  class="nav-link"
+                  href="#noavailable"
+                  aria-selected="false"
+                  target="_black"
+                  ><img
+                    class="img-fluid"
+                    src="images/icon-playstore.png"
+                    alt="alternative"
+                /></a> -->
+              </div>
+            </div>
+            <!-- end of card -->
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of cards-1 -->
+    <!-- end of Download -->
+
+    <!-- Pricing -->
+    <div id="pricing" class="cards-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="above-heading">PRICING</div>
+            <h2 class="h2-heading">Pricing Options Table</h2>
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Card-->
+            <div class="card">
+              <div class="card-body">
+                <div class="card-title">BASIC</div>
+                <div class="price">
+                  <span class="currency">INR</span
+                  ><span class="value">Free</span>
+                </div>
+                <div class="frequency">Life Time</div>
+                <div class="divider"></div>
+                <ul class="list-unstyled li-space-lg">
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Vernier Calipers</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-times"></i>
+                    <div class="media-body">Screw Guage</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-times"></i>
+                    <div class="media-body">Physical Balance</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-times"></i>
+                    <div class="media-body">Simple Pendulum</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-times"></i>
+                    <div class="media-body">Parallelogram law of forces</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-times"></i>
+                    <div class="media-body">Force constant of a spring</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-times"></i>
+                    <div class="media-body">Surface tension of a liquid</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-times"></i>
+                    <div class="media-body">Apparent expansion of liquid</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-times"></i>
+                    <div class="media-body">Boyle's Law</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-times"></i>
+                    <div class="media-body">Specific heat of a solid</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Velocity of sound</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-times"></i>
+                    <div class="media-body">Concave Mirror</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-times"></i>
+                    <div class="media-body">Convex Lens</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-times"></i>
+                    <div class="media-body">Magnetic Lines of force</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-times"></i>
+                    <div class="media-body">Refractive index of a prism</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-times"></i>
+                    <div class="media-body">Tangent Galvanometer</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-times"></i>
+                    <div class="media-body">Ohm's Law</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-times"></i>
+                    <div class="media-body">Meter Bridge</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-times"></i>
+                    <div class="media-body">Junction Diode</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-times"></i>
+                    <div class="media-body">Transistor characteristics</div>
+                  </li>
+                </ul>
+                <div class="button-wrapper">
+                  <a
+                    class="btn-solid-reg page-scroll"
+                    href="register/signup.html"
+                    >SIGN UP</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- end of card -->
+            <!-- end of card -->
+
+            <!-- Card-->
+            <div class="card">
+              <div class="card-body">
+                <div class="card-title">INDIVIDUAL</div>
+                <div class="price">
+                  <span class="currency">INR</span
+                  ><span class="value">350</span>
+                </div>
+                <div class="frequency">yearly</div>
+                <div class="divider"></div>
+                <ul class="list-unstyled li-space-lg">
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Vernier Calipers</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Screw Guage</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Physical Balance</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Simple Pendulum</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Parallelogram law of forces</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Force constant of a spring</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Surface tension of a liquid</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Apparent expansion of liquid</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Boyle's Law</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Specific heat of a solid</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Velocity of sound</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Concave Mirror</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Convex Lens</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Magnetic Lines of force</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Refractive index of a prism</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Tangent Galvanometer</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Ohm's Law</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Meter Bridge</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Junction Diode</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Transistor characteristics</div>
+                  </li>
+                </ul>
+                <div class="button-wrapper">
+                  <a
+                    class="btn-solid-reg page-scroll"
+                    href="register/signup.html"
+                    >SIGN UP</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- end of card -->
+            <!-- end of card -->
+
+            <!-- Card-->
+            <div class="card">
+              <!--<div class="label">
+                            <p class="best-value">Best Value</p>
+                        </div> -->
+              <div class="card-body">
+                <div class="card-title">COLLEGE</div>
+                <div class="price">
+                  <span class="currency">INR</span
+                  ><span class="value">250</span>
+                </div>
+                <div class="frequency">yearly/student</div>
+                <div class="divider"></div>
+                <ul class="list-unstyled li-space-lg">
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Vernier Calipers</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Screw Guage</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Physical Balance</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Simple Pendulum</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Parallelogram law of forces</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Force constant of a spring</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Surface tension of a liquid</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Apparent expansion of liquid</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Boyle's Law</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Specific heat of a solid</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Velocity of sound</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Concave Mirror</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Convex Lens</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Magnetic Lines of force</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Refractive index of a prism</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Tangent Galvanometer</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Ohm's Law</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Meter Bridge</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Junction Diode</div>
+                  </li>
+                  <li class="media">
+                    <i class="fas fa-check"></i>
+                    <div class="media-body">Transistor characteristics</div>
+                  </li>
+                </ul>
+                <div class="button-wrapper">
+                  <a class="btn-solid-reg page-scroll" href="#contactus"
+                    >CONTACT US</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- end of card -->
+            <!-- end of card -->
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of cards-2 -->
+    <!-- end of pricing -->
+
+    <!-- Testimonials -->
+    <div class="slider-2" id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="above-heading">Team</div>
+            <h2 class="h2-heading" style="text-align: center">Meet Our Team</h2>
+          </div>
+          <!-- end of col -->
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Text Slider -->
+            <div class="slider-container">
+              <div class="swiper-container text-slider">
+                <div class="swiper-wrapper">
+                  <!-- Slide -->
+                  <div class="swiper-slide">
+                    <div class="image-wrapper">
+                      <img
+                        class="img-fluid"
+                        src="images/khan.jpg"
+                        alt="alternative"
+                      />
+                    </div>
+                    <!-- end of image-wrapper -->
+                    <div class="text-wrapper">
+                      <div class="testimonial-text">
+                        Post graduate from JNTU Kakinada, a passionate
+                        programmer with more than 10 years of experience.
+                        Focused on new effective ways of educating kids.
+                      </div>
+                      <div class="testimonial-author">
+                        Patan Amrulla Khan - Founder & CTO
+                      </div>
+                    </div>
+                    <!-- end of text-wrapper -->
+                  </div>
+                  <!-- end of swiper-slide -->
+                  <!-- end of slide -->
+
+                  <!-- Slide -->
+                  <div class="swiper-slide">
+                    <div class="image-wrapper">
+                      <img
+                        class="img-fluid"
+                        src="images/reddy.jpg"
+                        alt="alternative"
+                      />
+                    </div>
+                    <!-- end of image-wrapper -->
+                    <div class="text-wrapper">
+                      <div class="testimonial-text">
+                        Post gradudate from GITAM's university, Visakhapatnam. A
+                        passionate entrepreneur, handling people & family
+                        buisiness from schooling.
+                      </div>
+                      <div class="testimonial-author">
+                        K.V.V. Gangadhar Reddy - Co Founder & CMO
+                      </div>
+                    </div>
+                    <!-- end of text-wrapper -->
+                  </div>
+                  <!-- end of swiper-slide -->
+                  <!-- end of slide -->
+
+                  <!-- Slide -->
+                  <div class="swiper-slide">
+                    <div class="image-wrapper">
+                      <img
+                        class="img-fluid"
+                        src="images/sravani.jpg"
+                        alt="alternative"
+                      />
+                    </div>
+                    <!-- end of image-wrapper -->
+                    <div class="text-wrapper">
+                      <div class="testimonial-text">
+                        Post gaduate from VSL, Kakinada. Passionate about
+                        teaching in creative and most engaging way.
+                      </div>
+                      <div class="testimonial-author">
+                        Bade Sravani Kumari - Creative Head
+                      </div>
+                    </div>
+                    <!-- end of text-wrapper -->
+                  </div>
+                  <!-- end of swiper-slide -->
+                  <!-- end of slide -->
+                </div>
+                <!-- end of swiper-wrapper -->
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- end of add arrows -->
+              </div>
+              <!-- end of swiper-container -->
+            </div>
+            <!-- end of slider-container -->
+            <!-- end of text slider -->
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of slider-2 -->
+    <!-- end of testimonials -->
+
+    <!-- Newsletter -->
+    <div class="form" id="contactus">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="text-container">
+              <div class="above-heading">CONTACT US</div>
+              <h2>So that we can visit your college and collaborate.</h2>
+
+              <!-- Newsletter Form -->
+              <!-- <form
+                id="newsletterForm"
+                data-toggle="validator"
+                data-focus="false"
+              >
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control-input"
+                    id="nemail"
+                    required
+                  />
+                  <label class="label-control" for="nemail">Email</label>
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="form-group checkbox">
+                  <input
+                    type="checkbox"
+                    id="nterms"
+                    value="Agreed-to-Terms"
+                    required
+                  />I've read and agree to PhyLab's written
+                  <a href="privacy-policy.html">Privacy Policy</a> and
+                  <a href="terms-conditions.html">Terms Conditions</a>
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="form-control-submit-button">
+                    SUBSCRIBE
+                  </button>
+                </div>
+                <div class="form-message">
+                  <div id="nmsgSubmit" class="h3 text-center hidden"></div>
+                </div>
+              </form> -->
+
+              <ul
+                class="list-unstyled li-space-lg p-small"
+                style="text-align: center"
+              >
+                <li class="nav-item">
+                  <a class="nav-link active" href="tel:+917893489989"
+                    ><i class="fas fa-phone"></i>Call Us @ +917893489989</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="mailto:info@phylab.co.in"
+                    ><i class="fas fa-envelope"></i>Mail Us @
+                    info@phylab.co.in</a
+                  >
+                </li>
+              </ul>
+              <!-- end of newsletter form -->
+            </div>
+            <!-- end of text-container -->
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="icon-container">
+              <span class="fa-stack">
+                <a href="https://www.facebook.com/phylab.co.in" target="_blank">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x"></i>
+                </a>
+              </span>
+              <!-- <span class="fa-stack">
+                <a href="#your-link">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x"></i>
+                </a>
+              </span> -->
+              <!-- <span class="fa-stack">
+                <a href="#your-link">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-pinterest-p fa-stack-1x"></i>
+                </a>
+              </span> -->
+              <span class="fa-stack">
+                <a href="https://www.instagram.com/phylab.app/" target="_blank">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-instagram fa-stack-1x"></i>
+                </a>
+              </span>
+              <!-- <span class="fa-stack">
+                <a href="#your-link">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                </a>
+              </span> -->
+              <span class="fa-stack">
+                <a
+                  href="https://www.youtube.com/channel/UCdlmekVPRLv57J0M3TEkU2Q/"
+                  target="_blank"
+                >
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-youtube fa-stack-1x"></i>
+                </a>
+              </span>
+            </div>
+            <!-- end of col -->
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of form -->
+    <!-- end of newsletter -->
+
+    <!-- Footer -->
+    <svg
+      class="footer-frame"
+      data-name="Layer 2"
+      xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="none"
+      viewBox="0 0 1920 79"
+    >
+      <defs>
+        <style>
+          .cls-2 {
+            fill: #11cafe;
+          }
+        </style>
+      </defs>
+      <title>footer-frame</title>
+      <path
+        class="cls-2"
+        d="M0,72.427C143,12.138,255.5,4.577,328.644,7.943c147.721,6.8,183.881,60.242,320.83,53.737,143-6.793,167.826-68.128,293-60.9,109.095,6.3,115.68,54.364,225.251,57.319,113.58,3.064,138.8-47.711,251.189-41.8,104.012,5.474,109.713,50.4,197.369,46.572,89.549-3.91,124.375-52.563,227.622-50.155A338.646,338.646,0,0,1,1920,23.467V79.75H0V72.427Z"
+        transform="translate(0 -0.188)"
+      />
+    </svg>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="footer-col first">
+              <h4>About PhyLab</h4>
+              <p class="p-small">
+                We're passionate about designing and developing effective tools
+                for kids to excel in their career.
+              </p>
             </div>
           </div>
-        </form>
-      </div> -->
-
-      <!--End mc_embed_signup-->
-    </main>
-
-    <a href="javascript:void(0)" class="cd-top"></a>
-    <!-- FOOTER SECTION START -->
-    <footer class="site-footer">
-      <div class="social-wrapper">
-        <a
-          class="social-wrapper__icon"
-          href="https://www.facebook.com/phylab.tech"
-          target="_blank"
-        >
-          <img src="images/facebook.svg" alt="Facebook" />
-        </a>
-
-        <a
-          class="social-wrapper__icon"
-          href="https://www.instagram.com/phylab.app/"
-          target="_blank"
-        >
-          <img src="images/instagram.svg" alt="Instagram" />
-        </a>
-
-        <!-- <a class="social-wrapper__icon" href="javascript:void(0)">
-          <img src="images/twitter.svg" alt="Twitter" />
-        </a> -->
-        <a
-          class="social-wrapper__icon"
-          href="https://www.youtube.com/channel/UCdlmekVPRLv57J0M3TEkU2Q/"
-          target="_blank"
-        >
-          <img src="images/youtube.svg" alt="Youtube" />
-        </a>
+          <!-- end of col -->
+          <div class="col-md-4">
+            <div class="footer-col middle">
+              <h4>Important Links</h4>
+              <ul class="list-unstyled li-space-lg p-small">
+                <li class="media">
+                  <i class="fas fa-square"></i>
+                  <div class="media-body">
+                    Read our
+                    <a class="white" href="terms-conditions.html"
+                      >Terms & Conditions</a
+                    >,
+                    <a class="white" href="privacy-policy.html"
+                      >Privacy Policy</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- end of col -->
+          <div class="col-md-4">
+            <div class="footer-col last">
+              <h4>Contact</h4>
+              <ul class="list-unstyled li-space-lg p-small">
+                <li class="media">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div class="media-body">
+                    Plot 24B, Khalighat Colony, Vuda Colony Phase 1 back side,
+                    Vizianagaram, AP, India - 535003
+                  </div>
+                </li>
+                <li class="media">
+                  <i class="fas fa-envelope"></i>
+                  <div class="media-body">
+                    <a class="white" href="mailto:info@phylab.co.in"
+                      >info@phylab.co.in</a
+                    >
+                    <i class="fas fa-globe"></i
+                    ><a class="white" href="https://www.phylab.co.in"
+                      >www.phylab.co.in</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
       </div>
-      <div class="copyright">
-        Copyright &copy; PhyLab 2020 | All rights reserved | Site designed by
-        <a target="_blank" href="https://meviru.github.io/">Viral Patel</a>
+      <!-- end of container -->
+    </div>
+    <!-- end of footer -->
+    <!-- end of footer -->
+
+    <img
+      src="images/launchingsoonchemlab.png"
+      style="position: fixed; right: -200px; top: 70px"
+      width="175px"
+      height="175px"
+      id="bannerAd"
+    />
+
+    <!-- Copyright -->
+    <div class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="p-small">
+              Copyright © 2020
+              <a href="https://inovatik.com">Template by Inovatik</a>
+            </p>
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- enf of row -->
       </div>
-    </footer>
-    <!-- FOOTER SECTION END -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sly/1.6.1/sly.min.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/carousel.js"></script>
+      <!-- end of container -->
+    </div>
+    <!-- end of copyright -->
+    <!-- end of copyright -->
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script>
+    <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script>
+    <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script>
+    <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- Magnific Popup for lightboxes -->
+    <script src="js/validator.min.js"></script>
+    <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script>
+    <!-- Custom scripts -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyB8W1wwXIP3NgGpgyMkHTl6UTI8hDXIVXU",
+        authDomain: "phylab-65237.firebaseapp.com",
+        databaseURL: "https://phylab-65237.firebaseio.com",
+        projectId: "phylab-65237",
+        storageBucket: "phylab-65237.appspot.com",
+        messagingSenderId: "823972917294",
+        appId: "1:823972917294:web:d6c6ed1e5111ebcce6afbf",
+        measurementId: "G-V3Q5NKT8RE",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+      firebase.analytics().logEvent("customer_visited_site");
+    </script>
   </body>
 </html>
