@@ -24,14 +24,15 @@ function createWindow () {
     console.log(redirectUrl.split("/v")[1])
     const pkg = require('./package.json')
     console.log(pkg.version);
-    if (redirectUrl.split("/v")[1] !== pkg.version)
+	const vr = redirectUrl.split("/v")[1];
+    if ( vr !== pkg.version)
     {
       const dialogOpts = {
         type: 'info',
         buttons: ['Download', 'Later'],
         title: 'Application Update',
         message: `Version `,
-        detail: 'A new version is available. It is highly recommend to install new version.'
+        detail: `A new version ${vr} is available. It is highly recommend to install new version.`
       }
 
       dialog.showMessageBox(dialogOpts).then(({ response }) => {

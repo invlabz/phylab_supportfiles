@@ -1505,7 +1505,7 @@ a.back-to-top {
   width: 2.625rem;
   height: 2.625rem;
   border-radius: 1.875rem;
-  background: #4f3cda url("../images/up-arrow.png") no-repeat center 47%;
+  background: #063c4b url("../images/up-arrow.png") no-repeat center 47%;
   background-size: 1.125rem 1.125rem;
   text-indent: -9999px;
 }
@@ -2135,4 +2135,19 @@ a:hover.back-to-top {
 /* end of min-width width 1200px */
 #bannerAd {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.old {
+  text-decoration: line-through double;
+}
+
+.newprice {
+  background-color: #11cafe;
+  color: white !important;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.frequency {
+  margin-top: 5px;
 }
