@@ -163,7 +163,7 @@
                     }
                 })
                 .done(function() {
-                    alert( "second success" );
+                    //alert( "second success" );
                 })
                 .fail(function(xhr, status, error) {
                     alert( error );

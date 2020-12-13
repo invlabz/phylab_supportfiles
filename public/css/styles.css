@@ -2142,10 +2142,15 @@ a:hover.back-to-top {
 }
 
 .newprice {
+  border-radius: 30px;
   background-color: #11cafe;
   color: white !important;
   padding-left: 5px;
   padding-right: 5px;
+}
+
+.newprice .value {
+  color: white !important;
 }
 
 .frequency {

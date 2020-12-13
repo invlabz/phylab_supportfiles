@@ -280,7 +280,7 @@
           </fieldset>
         </form>
 
-        <div id="paymentTab" style="height: 250px">
+        <div id="paymentTab" style="height: 450px">
           <a style="display: block; width: 100%">
             <span class="current-info audible"> </span>
             <span
@@ -292,11 +292,22 @@
               "
             >
               <span class="icon"><i class="ti-credit-card"></i></span>
-              <span class="title_text">Payment</span>
+              <span class="title_text">Success</span>
             </span>
           </a>
+          <h5 style="margin: 30px; text-align: center">
+            You can try out Vernier Calipers & Velocity of Sound experiments by
+            <span class="nav-item">
+              <a
+                class="btn-outline-sm"
+                href="https://www.phylab.co.in/index.html#downloads"
+                >SIGN IN</a
+              >
+            </span>
+          </h5>
+          <h6 style="margin: 30px; text-align: center">OR</h6>
           <h4 style="margin: 30px; text-align: center">
-            Please complete payment of INR 350/- to activate your account...
+            Please complete payment of INR 350/- to unlock all experiments...
           </h4>
           <div class="pm-button" style="margin: 20px">
             <a
@@ -453,5 +464,19 @@
     <script src="../js/validator.min.js"></script>
     <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/main.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-185009773-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-185009773-1");
+    </script>
   </body>
 </html>
