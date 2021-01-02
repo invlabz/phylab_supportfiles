@@ -142,6 +142,8 @@
                 studentDetails['parentPhone'] = $('#parentphone').val();
                 studentDetails['phone'] = $('#phone').val();
                 studentDetails['year'] = new Date(Date.now()).getFullYear();
+                studentDetails['isChemistry'] = false;
+                studentDetails['isPhysics'] = true;
 
                 
                 let xdata = {};

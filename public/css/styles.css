@@ -813,6 +813,98 @@ input[type="checkbox"] {
 /*********************/
 .header {
   background-color: #11cafe;
+  background-image: url("../images/cover.jpg");
+  background-position: bottom; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: contain; /* Resize the background image to cover the entire container */
+  min-height: 220px;
+}
+@media only screen and (min-device-width: 350px) {
+  .header {
+    min-height: 250px;
+  }
+}
+@media only screen and (min-device-width: 400px) {
+  .header {
+    min-height: 280px;
+  }
+}
+@media only screen and (min-device-width: 450px) {
+  .header {
+    min-height: 300px;
+  }
+}
+@media only screen and (min-device-width: 500px) {
+  .header {
+    min-height: 320px;
+  }
+}
+@media only screen and (min-device-width: 550px) {
+  .header {
+    min-height: 340px;
+  }
+}
+@media only screen and (min-device-width: 600px) {
+  .header {
+    min-height: 360px;
+  }
+}
+@media only screen and (min-device-width: 700px) {
+  .header {
+    min-height: 440px;
+  }
+}
+@media only screen and (min-device-width: 800px) {
+  .header {
+    min-height: 500px;
+  }
+}
+@media only screen and (min-device-width: 900px) {
+  .header {
+    min-height: 550px;
+  }
+}
+@media only screen and (min-device-width: 1000px) {
+  .header {
+    min-height: 600px;
+    background-size: cover;
+  }
+}
+@media only screen and (min-device-width: 1100px) {
+  .header {
+    min-height: 650px;
+    background-size: cover;
+  }
+}
+@media only screen and (min-device-width: 1200px) {
+  .header {
+    min-height: 700px;
+    background-size: cover;
+  }
+}
+@media only screen and (min-device-width: 1300px) {
+  .header {
+    min-height: 750px;
+    background-size: cover;
+  }
+}
+@media only screen and (min-device-width: 1400px) {
+  .header {
+    min-height: 800px;
+    background-size: cover;
+  }
+}
+@media only screen and (min-device-width: 1500px) {
+  .header {
+    min-height: 850px;
+    background-size: cover;
+  }
+}
+@media only screen and (min-device-width: 1600px) {
+  .header {
+    min-height: 900px;
+    background-size: cover;
+  }
 }
 
 .header .header-content {

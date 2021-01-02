@@ -69,6 +69,7 @@
               // Makes sure the document is ready to parse.
               if (txtFile.status === 200) {
                 data = JSON.parse(txtFile.responseText);
+                console.log(data);
                 while (indeces.length != 5) {
                   i = Math.floor(Math.random() * data.content.length);
                   if (indeces.indexOf(i) == -1) {
@@ -76,47 +77,47 @@
                   }
                 }
 
-                $("#question1").text(data.content[indeces[0]].title);
-                $("#option11").text(data.content[indeces[0]].options[0]);
-                $("#option12").text(data.content[indeces[0]].options[1]);
-                $("#option13").text(data.content[indeces[0]].options[2]);
-                $("#option14").text(data.content[indeces[0]].options[3]);
+                $("#question1").html(data.content[indeces[0]].title);
+                $("#option11").html(data.content[indeces[0]].options[0]);
+                $("#option12").html(data.content[indeces[0]].options[1]);
+                $("#option13").html(data.content[indeces[0]].options[2]);
+                $("#option14").html(data.content[indeces[0]].options[3]);
                 if (data.content[indeces[0]].image !== null) {
                   $("#image1").attr("src", data.content[indeces[0]].image);
                 }
 
-                $("#question2").text(data.content[indeces[1]].title);
-                $("#option21").text(data.content[indeces[1]].options[0]);
-                $("#option22").text(data.content[indeces[1]].options[1]);
-                $("#option23").text(data.content[indeces[1]].options[2]);
-                $("#option24").text(data.content[indeces[1]].options[3]);
+                $("#question2").html(data.content[indeces[1]].title);
+                $("#option21").html(data.content[indeces[1]].options[0]);
+                $("#option22").html(data.content[indeces[1]].options[1]);
+                $("#option23").html(data.content[indeces[1]].options[2]);
+                $("#option24").html(data.content[indeces[1]].options[3]);
                 if (data.content[indeces[1]].image !== null) {
                   $("#image2").attr("src", data.content[indeces[1]].image);
                 }
 
-                $("#question3").text(data.content[indeces[2]].title);
-                $("#option31").text(data.content[indeces[2]].options[0]);
-                $("#option32").text(data.content[indeces[2]].options[1]);
-                $("#option33").text(data.content[indeces[2]].options[2]);
-                $("#option34").text(data.content[indeces[2]].options[3]);
+                $("#question3").html(data.content[indeces[2]].title);
+                $("#option31").html(data.content[indeces[2]].options[0]);
+                $("#option32").html(data.content[indeces[2]].options[1]);
+                $("#option33").html(data.content[indeces[2]].options[2]);
+                $("#option34").html(data.content[indeces[2]].options[3]);
                 if (data.content[indeces[2]].image !== null) {
                   $("#image3").attr("src", data.content[indeces[2]].image);
                 }
 
-                $("#question4").text(data.content[indeces[3]].title);
-                $("#option41").text(data.content[indeces[3]].options[0]);
-                $("#option42").text(data.content[indeces[3]].options[1]);
-                $("#option43").text(data.content[indeces[3]].options[2]);
-                $("#option44").text(data.content[indeces[3]].options[3]);
+                $("#question4").html(data.content[indeces[3]].title);
+                $("#option41").html(data.content[indeces[3]].options[0]);
+                $("#option42").html(data.content[indeces[3]].options[1]);
+                $("#option43").html(data.content[indeces[3]].options[2]);
+                $("#option44").html(data.content[indeces[3]].options[3]);
                 if (data.content[indeces[3]].image !== null) {
                   $("#image4").attr("src", data.content[indeces[3]].image);
                 }
 
-                $("#question5").text(data.content[indeces[4]].title);
-                $("#option51").text(data.content[indeces[4]].options[0]);
-                $("#option52").text(data.content[indeces[4]].options[1]);
-                $("#option53").text(data.content[indeces[4]].options[2]);
-                $("#option54").text(data.content[indeces[4]].options[3]);
+                $("#question5").html(data.content[indeces[4]].title);
+                $("#option51").html(data.content[indeces[4]].options[0]);
+                $("#option52").html(data.content[indeces[4]].options[1]);
+                $("#option53").html(data.content[indeces[4]].options[2]);
+                $("#option54").html(data.content[indeces[4]].options[3]);
                 if (data.content[indeces[4]].image !== null) {
                   $("#image5").attr("src", data.content[indeces[4]].image);
                 }
