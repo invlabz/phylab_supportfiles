@@ -18,7 +18,7 @@ function createWindow () {
 
   win.loadFile('index.html')
 
-  const request = net.request("https://github.com/pamrulla/phylab_supportfiles/releases/latest"); 
+  const request = net.request("https://github.com/invlabz/phylab_supportfiles/releases/latest"); 
   request.on('redirect', (statusCode, method, redirectUrl, responseHeaders) => { 
     console.log(`HEADERS: ${redirectUrl}`); 
     console.log(redirectUrl.split("/v")[1])
