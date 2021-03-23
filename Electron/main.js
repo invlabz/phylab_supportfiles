@@ -37,7 +37,7 @@ function createWindow () {
 
       dialog.showMessageBox(dialogOpts).then(({ response }) => {
         if (response === 0) {
-          require("electron").shell.openExternal("https://github.com/pamrulla/phylab_supportfiles/releases/latest/download/PhyLabSetup.exe").then(() => {
+          require("electron").shell.openExternal("https://github.com/invlabz/phylab_supportfiles/releases/latest/download/PhyLabSetup.exe").then(() => {
             app.exit(0)
           });
         }
